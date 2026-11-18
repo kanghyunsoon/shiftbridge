@@ -1,0 +1,147 @@
+Browser tab: 1, Title: "ShiftBridge · 교대 인수인계", URL: "http://127.0.0.1:4173/".
+0 AXWebArea ShiftBridge · 교대 인수인계, URL: 127.0.0.1:4173/
+	1 container detail-dialog
+		2 container
+			3 text 판단 근거 / SOURCE RECORDS
+			4 button 근거 닫기
+		5 container detail-content
+			6 text 2026-10-26 20:00:00 KST · 당시 가용 근거
+			7 heading AL-00086, Value: 2
+				8 text AL-00086
+			9 heading EQ-02 · 모터 진동, Value: 3
+				10 text EQ-02 · 모터 진동
+			11 text HIGH
+			12 text 미해결
+			13 text 발생 이후 기준 시각까지 유효한 해제가 확인되지 않았습니다.
+			14 text 확인할 내용: 현재 설비 상태와 해제·조치 기록을 확인해주세요.
+			15 text 발생 2026-10-20 09:07:00 · 지속 154시간 53분
+			16 heading 동일 설비의 인계 LOT (피해 확정 아님), Value: 3
+				17 text 동일 설비의 인계 LOT (피해 확정 아님)
+			18 button LOT-0203 · COMPLETE
+			19 button LOT-0426 · COMPLETE
+			20 button LOT-0105 · COMPLETE
+			21 button LOT-0330 · COMPLETE
+			22 button LOT-0233 · COMPLETE
+			23 button LOT-0144 · COMPLETE
+			24 button LOT-0040 · COMPLETE
+			25 button LOT-0152 · COMPLETE
+			26 button LOT-0164 · COMPLETE
+			27 button LOT-0292 · COMPLETE
+			28 button LOT-0250 · COMPLETE
+			29 button LOT-0156 · COMPLETE
+			30 button LOT-0412 · COMPLETE
+			31 button LOT-0335 · COMPLETE
+			32 button LOT-0187 · COMPLETE
+			33 button LOT-0262 · COMPLETE
+			34 button LOT-0319 · COMPLETE
+			35 button LOT-0017 · COMPLETE
+			36 button LOT-0324 · COMPLETE
+			37 button LOT-0264 · COMPLETE
+			38 button LOT-0147 · COMPLETE
+			39 button LOT-0246 · COMPLETE
+			40 button LOT-0075 · IN_PROGRESS
+			41 button LOT-0132 · IN_PROGRESS
+			42 button LOT-0032 · IN_PROGRESS
+			43 heading 동일 설비 관련 메모 (특정 알람과 인과관계 미확정), Value: 3
+				44 text 동일 설비 관련 메모 (특정 알람과 인과관계 미확정)
+			45 button NOTE-0031
+			46 text  상태 변화가 반복되어 추적 필요
+			47 text 2026-10-25 02:20:00 · 지속 관찰
+			48 button NOTE-0017
+			49 text  정비 결과 기록 확인
+			50 text 2026-10-24 05:49:00 · 분류 확인 필요
+			51 button NOTE-0026
+			52 text  정기 보전 일정 확인
+			53 text 2026-10-24 02:03:00 · 분류 확인 필요
+			54 button NOTE-0068
+			55 text  자료 입력 누락 의심
+			56 text 2026-10-23 23:38:00 · 후속 확인
+			57 button NOTE-0015
+			58 text  지표 변동 원인 추가 확인 필요
+			59 text 2026-10-23 14:26:00 · 후속 확인
+			60 button NOTE-0053
+			61 text  출하 일정 영향 여부 확인
+			62 text 2026-10-23 13:41:00 · 후속 확인
+			63 button NOTE-0082
+			64 text  정기 보전 일정 확인
+			65 text 2026-10-22 22:21:00 · 분류 확인 필요
+			66 button NOTE-0046
+			67 text  지표 변동 원인 추가 확인 필요
+			68 text 2026-10-22 03:50:00 · 후속 확인
+			69 button NOTE-0088
+			70 text  담당자 부재로 확인 대기
+			71 text 2026-10-21 17:33:00 · 후속 확인
+			72 button NOTE-0069
+			73 text  이전 보고 내용과 수치 비교 요청
+			74 text 2026-10-21 16:09:00 · 후속 확인
+			75 button NOTE-0084
+			76 text  상태 변화가 반복되어 추적 필요
+			77 text 2026-10-20 03:15:00 · 지속 관찰
+			78 heading 판단에 사용한 원본 기록 3, Value: 3
+				79 text 판단에 사용한 원본 기록 
+			80 container
+				81 button (expanded) EV-000165 alarm_events.csv:295, Secondary Actions: Collapse
+					82 AXListMarker ▾ 
+					83 text EV-000165
+					84 text alarm_events.csv:295
+				85 definition list
+					86 container event_id
+						87 text event_id
+					88 text EV-000165
+					89 container equipment_id
+						90 text equipment_id
+					91 text EQ-02
+					92 container alarm_instance_id
+						93 text alarm_instance_id
+					94 text AL-00086
+					95 container alarm_code
+						96 text alarm_code
+					97 text A106
+					98 container event_type
+						99 text event_type
+					100 text RAISED
+					101 container occurred_at
+						102 text occurred_at
+					103 text 2026-10-20 09:07:00
+					104 container received_at
+						105 text received_at
+					106 text 2026-10-20 09:07:00
+					107 container detail
+						108 text detail
+					109 text 장비 알람 발생
+			110 container
+				111 button (expanded) A106 alarm_catalog.csv:7, Secondary Actions: Collapse
+					112 AXListMarker ▾ 
+					113 text A106
+					114 text alarm_catalog.csv:7
+				115 definition list
+					116 container alarm_code
+						117 text alarm_code
+					118 text A106
+					119 container display_name
+						120 text display_name
+					121 text 모터 진동
+					122 container severity
+						123 text severity
+					124 text HIGH
+			125 container
+				126 button (expanded) EQ-02 equipment.csv:3, Secondary Actions: Collapse
+					127 AXListMarker ▾ 
+					128 text EQ-02
+					129 text equipment.csv:3
+				130 definition list
+					131 container equipment_id
+						132 text equipment_id
+					133 text EQ-02
+					134 container area
+						135 text area
+					136 text ETCH
+					137 container equipment_name
+						138 text equipment_name
+					139 text TOOL-B
+					140 container location
+						141 text location
+					142 text B1-L2
+			143 text 제공 이력 이전 상태는 확인 불가 · 제공 기록 기준
+
+The focused UI element is 4 button 근거 닫기

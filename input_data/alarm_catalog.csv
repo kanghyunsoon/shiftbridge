@@ -1,0 +1,9 @@
+﻿alarm_code,display_name,severity
+A101,온도 상승,HIGH
+A102,유량 이상,HIGH
+A103,통신 지연,LOW
+A104,압력 변동,MEDIUM
+A105,센서 응답 없음,MEDIUM
+A106,모터 진동,HIGH
+A107,필터 점검 알림,LOW
+A108,처리 대기 증가,MEDIUM

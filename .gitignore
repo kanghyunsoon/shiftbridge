@@ -1,0 +1,10 @@
+# Project-local Spec Kit CLI/dependency cache; not application source.
+.specify-tool-cache/
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+tmp/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,817 @@
+Browser tab: 1, Title: "ShiftBridge · 교대 인수인계", URL: "http://127.0.0.1:4173/".
+0 AXWebArea ShiftBridge · 교대 인수인계, URL: 127.0.0.1:4173/
+	1 link Description: ShiftBridge 홈, Value: 127.0.0.1:4173/
+	2 container
+		3 text 생산운영  /  교대 인수인계 READ-ONLY · 로컬 CSV
+		4 text SHIFT HANDOVER
+		5 heading 다음 교대의 시작을 명확하게., Value: 1
+			6 text 다음 교대의 시작을 명확하게.
+		7 text 확인할 업무와 기록의 불확실성을 나누고, 판단의 근거까지 확인하세요.
+		8 button 인수인계 요약 ↗, ID: open-summary
+			9 text 인수인계 요약
+			10 text ↗
+		11 container 조회 조건
+			12 text 교대 기준일
+			13 date field (settable) 교대 기준일, Value: 2026-10-26, ID: shift-date
+				14 container
+					15 stepper
+					16 stepper
+					17 stepper
+				18 pop up button 날짜 선택도구 표시 날짜 선택도구 표시
+			19 text 교대 시각 · KST
+			20 pop up button (collapsed, settable) 교대 시각 · KST, Value: 20:00 · 야간 시작, ID: shift-hour, Secondary Actions: Expand
+				21 menu
+					22 08:00 · 주간 시작
+					23 (selected) 20:00 · 야간 시작
+			24 button 조회하기, ID: apply-shift
+			25 button 최근 교대, ID: latest-shift
+			26 container
+				27 text ↥ CSV 선택
+				28 button ↥ CSV 선택, ID: csv-files
+			29 button 기본 자료, ID: reload-default
+		30 text 기본 input_data 자료 · 선택한 CSV는 파일별로 대체하며 서버에 업로드하지 않습니다.
+		31 container result
+			32 text 2026-10-26 20:00:00  KST 기준 제공 기록에서 확인된 상태
+			33 container 제공 기록 기준 요약
+				34 container
+					35 text 미해결 알람 42
+					36 text 건 확인
+					37 text HIGH 18  심각도 우선 확인
+				38 container
+					39 text 인계 생산 LOT 240
+					40 text 개 확인
+					41 text 진행 59 · 보류 수량 존재 181
+				42 container
+					43 text 최근 현장 메모 4
+					44 text 개 확인
+					45 text 최근24시간 · 하한 시각 제외
+				46 container
+					47 text 상태·데이터 확인 135
+					48 text 개 항목
+					49 text 알람 상태 미확정 7건 포함
+			50 text i
+			51 text 제공 이력 이전 상태는 확인 불가
+			52 text 표시 수치는 전체 공장의 실제 건수나 수집 완료를 보장하지 않습니다.
+			53 container
+				54 tab group 인수인계 영역
+					55 tab (selected, settable, boolean) 우선 확인 알람42, Value: 1
+					56 tab (selectable, settable, boolean) 생산·현장 업무243, Value: 0
+					57 tab (selectable, settable, boolean) 상태·데이터 확인135, Value: 0
+				58 pop up button (collapsed, settable) Description: 설비 필터, Value: 모든 설비, ID: equipment-filter, Secondary Actions: Expand
+					59 menu
+						60 (selected) 모든 설비
+						61 EQ-01 · TOOL-A
+						62 EQ-02 · TOOL-B
+						63 EQ-03 · TOOL-C
+						64 EQ-04 · TOOL-D
+						65 EQ-05 · TOOL-E
+						66 EQ-06 · TOOL-F
+						67 EQ-07 · TOOL-G
+						68 EQ-08 · TOOL-H
+						69 EQ-09 · TOOL-I
+						70 EQ-10 · TOOL-J
+				71 search text field (settable) Description: 기록 검색, ID: record-search
+			72 container
+				73 heading 우선 확인 알람 42, Value: 2
+					74 text 우선 확인 알람  42
+				75 text 심각도 우선 · 같은 심각도에서는 미해결 지속시간 순
+				76 table
+					77 row
+						78 cell
+							79 text 설비
+						80 cell
+							81 text 미해결 알람
+						82 cell
+							83 text 심각도
+						84 cell
+							85 text 미해결 지속시간
+						86 cell
+							87 text 연결 정보
+						88 cell
+							89 text 원본 근거
+					90 row
+						91 cell
+							92 text EQ-02
+							93 text TOOL-B
+						94 cell
+							95 text 모터 진동
+							96 text A106 · AL-00086
+						97 cell
+							98 text HIGH
+						99 cell
+							100 text 154시간 53분
+							101 text 2026-10-20 09:07:00
+						102 cell
+							103 text 연결 LOT 25
+							104 text 보류 LOT 있음
+						105 cell
+							106 button 근거 보기 ↗
+					107 row
+						108 cell
+							109 text EQ-10
+							110 text TOOL-J
+						111 cell
+							112 text 모터 진동
+							113 text A106 · AL-00537
+						114 cell
+							115 text HIGH
+						116 cell
+							117 text 154시간 48분
+							118 text 2026-10-20 09:12:00
+						119 cell
+							120 text 연결 LOT 22
+							121 text 보류 LOT 있음
+						122 cell
+							123 button 근거 보기 ↗
+					124 row
+						125 cell
+							126 text EQ-05
+							127 text TOOL-E
+						128 cell
+							129 text 온도 상승
+							130 text A101 · AL-00258
+						131 cell
+							132 text HIGH
+						133 cell
+							134 text 141시간 49분
+							135 text 2026-10-20 22:11:00
+						136 cell
+							137 text 연결 LOT 29
+							138 text 보류 LOT 있음
+							139 text 최근24시간 2회 · 2026-10-26 01:32:00
+						140 cell
+							141 button 근거 보기 ↗
+					142 row
+						143 cell
+							144 text EQ-04
+							145 text TOOL-D
+						146 cell
+							147 text 유량 이상
+							148 text A102 · AL-00186
+						149 cell
+							150 text HIGH
+						151 cell
+							152 text 121시간 29분
+							153 text 2026-10-21 18:31:00
+						154 cell
+							155 text 연결 LOT 27
+							156 text 보류 LOT 있음
+						157 cell
+							158 button 근거 보기 ↗
+					159 row
+						160 cell
+							161 text EQ-07
+							162 text TOOL-G
+						163 cell
+							164 text 온도 상승
+							165 text A101 · AL-00363
+						166 cell
+							167 text HIGH
+						168 cell
+							169 text 108시간 51분
+							170 text 2026-10-22 07:09:00
+						171 cell
+							172 text 연결 LOT 20
+							173 text 보류 LOT 있음
+						174 cell
+							175 button 근거 보기 ↗
+					176 row
+						177 cell
+							178 text EQ-10
+							179 text TOOL-J
+						180 cell
+							181 text 유량 이상
+							182 text A102 · AL-00556
+						183 cell
+							184 text HIGH
+						185 cell
+							186 text 80시간 25분
+							187 text 2026-10-23 11:35:00
+						188 cell
+							189 text 연결 LOT 22
+							190 text 보류 LOT 있음
+						191 cell
+							192 button 근거 보기 ↗
+					193 row
+						194 cell
+							195 text EQ-05
+							196 text TOOL-E
+						197 cell
+							198 text 모터 진동
+							199 text A106 · AL-00290
+						200 cell
+							201 text HIGH
+						202 cell
+							203 text 77시간 0분
+							204 text 2026-10-23 15:00:00
+						205 cell
+							206 text 연결 LOT 29
+							207 text 보류 LOT 있음
+						208 cell
+							209 button 근거 보기 ↗
+					210 row
+						211 cell
+							212 text EQ-07
+							213 text TOOL-G
+						214 cell
+							215 text 온도 상승
+							216 text A101 · AL-00362
+						217 cell
+							218 text HIGH
+						219 cell
+							220 text 73시간 51분
+							221 text 2026-10-23 18:09:00
+						222 cell
+							223 text 연결 LOT 20
+							224 text 보류 LOT 있음
+						225 cell
+							226 button 근거 보기 ↗
+					227 row
+						228 cell
+							229 text EQ-03
+							230 text TOOL-C
+						231 cell
+							232 text 온도 상승
+							233 text A101 · AL-00148
+						234 cell
+							235 text HIGH
+						236 cell
+							237 text 48시간 17분
+							238 text 2026-10-24 19:43:00
+						239 cell
+							240 text 연결 LOT 20
+							241 text 보류 LOT 있음
+							242 text 최근24시간 2회 · 2026-10-26 04:46:00
+						243 cell
+							244 button 근거 보기 ↗
+					245 row
+						246 cell
+							247 text EQ-10
+							248 text TOOL-J
+						249 cell
+							250 text 유량 이상
+							251 text A102 · AL-00533
+						252 cell
+							253 text HIGH
+						254 cell
+							255 text 19시간 2분
+							256 text 2026-10-26 00:58:00
+						257 cell
+							258 text 연결 LOT 22
+							259 text 보류 LOT 있음
+						260 cell
+							261 button 근거 보기 ↗
+					262 row
+						263 cell
+							264 text EQ-02
+							265 text TOOL-B
+						266 cell
+							267 text 모터 진동
+							268 text A106 · AL-00071
+						269 cell
+							270 text HIGH
+						271 cell
+							272 text 18시간 41분
+							273 text 2026-10-26 01:19:00
+						274 cell
+							275 text 연결 LOT 25
+							276 text 보류 LOT 있음
+						277 cell
+							278 button 근거 보기 ↗
+					279 row
+						280 cell
+							281 text EQ-05
+							282 text TOOL-E
+						283 cell
+							284 text 온도 상승
+							285 text A101 · AL-00276
+						286 cell
+							287 text HIGH
+						288 cell
+							289 text 18시간 28분
+							290 text 2026-10-26 01:32:00
+						291 cell
+							292 text 연결 LOT 29
+							293 text 보류 LOT 있음
+							294 text 최근24시간 2회 · 2026-10-26 01:32:00
+						295 cell
+							296 button 근거 보기 ↗
+					297 row
+						298 cell
+							299 text EQ-10
+							300 text TOOL-J
+						301 cell
+							302 text 온도 상승
+							303 text A101 · AL-00573
+						304 cell
+							305 text HIGH
+						306 cell
+							307 text 17시간 40분
+							308 text 2026-10-26 02:20:00
+						309 cell
+							310 text 연결 LOT 22
+							311 text 보류 LOT 있음
+						312 cell
+							313 button 근거 보기 ↗
+					314 row
+						315 cell
+							316 text EQ-03
+							317 text TOOL-C
+						318 cell
+							319 text 유량 이상
+							320 text A102 · AL-00162
+						321 cell
+							322 text HIGH
+						323 cell
+							324 text 16시간 22분
+							325 text 2026-10-26 03:38:00
+						326 cell
+							327 text 연결 LOT 20
+							328 text 보류 LOT 있음
+						329 cell
+							330 button 근거 보기 ↗
+					331 row
+						332 cell
+							333 text EQ-01
+							334 text TOOL-A
+						335 cell
+							336 text 모터 진동
+							337 text A106 · AL-00037
+						338 cell
+							339 text HIGH
+						340 cell
+							341 text 15시간 44분
+							342 text 2026-10-26 04:16:00
+						343 cell
+							344 text 연결 LOT 29
+							345 text 보류 LOT 있음
+							346 text 최근24시간 3회 · 2026-10-26 04:32:00
+						347 cell
+							348 button 근거 보기 ↗
+					349 row
+						350 cell
+							351 text EQ-03
+							352 text TOOL-C
+						353 cell
+							354 text 온도 상승
+							355 text A101 · AL-00157
+						356 cell
+							357 text HIGH
+						358 cell
+							359 text 15시간 14분
+							360 text 2026-10-26 04:46:00
+						361 cell
+							362 text 연결 LOT 20
+							363 text 보류 LOT 있음
+							364 text 최근24시간 2회 · 2026-10-26 04:46:00
+						365 cell
+							366 button 근거 보기 ↗
+					367 row
+						368 cell
+							369 text EQ-01
+							370 text TOOL-A
+						371 cell
+							372 text 온도 상승
+							373 text A101 · AL-00041
+						374 cell
+							375 text HIGH
+						376 cell
+							377 text 14시간 29분
+							378 text 2026-10-26 05:31:00
+						379 cell
+							380 text 연결 LOT 29
+							381 text 보류 LOT 있음
+						382 cell
+							383 button 근거 보기 ↗
+					384 row
+						385 cell
+							386 text EQ-09
+							387 text TOOL-I
+						388 cell
+							389 text 온도 상승
+							390 text A101 · AL-00517
+						391 cell
+							392 text HIGH
+						393 cell
+							394 text 14시간 8분
+							395 text 2026-10-26 05:52:00
+						396 cell
+							397 text 연결 LOT 23
+							398 text 보류 LOT 있음
+						399 cell
+							400 button 근거 보기 ↗
+					401 row
+						402 cell
+							403 text EQ-08
+							404 text TOOL-H
+						405 cell
+							406 text 압력 변동
+							407 text A104 · AL-00447
+						408 cell
+							409 text MEDIUM
+						410 cell
+							411 text 160시간 28분
+							412 text 2026-10-20 03:32:00
+						413 cell
+							414 text 연결 LOT 17
+							415 text 보류 LOT 있음
+						416 cell
+							417 button 근거 보기 ↗
+					418 row
+						419 cell
+							420 text EQ-08
+							421 text TOOL-H
+						422 cell
+							423 text 압력 변동
+							424 text A104 · AL-00430
+						425 cell
+							426 text MEDIUM
+						427 cell
+							428 text 127시간 2분
+							429 text 2026-10-21 12:58:00
+						430 cell
+							431 text 연결 LOT 17
+							432 text 보류 LOT 있음
+						433 cell
+							434 button 근거 보기 ↗
+					435 row
+						436 cell
+							437 text EQ-06
+							438 text TOOL-F
+						439 cell
+							440 text 압력 변동
+							441 text A104 · AL-00352
+						442 cell
+							443 text MEDIUM
+						444 cell
+							445 text 95시간 37분
+							446 text 2026-10-22 20:23:00
+						447 cell
+							448 text 연결 LOT 28
+							449 text 보류 LOT 있음
+						450 cell
+							451 button 근거 보기 ↗
+					452 row
+						453 cell
+							454 text EQ-05
+							455 text TOOL-E
+						456 cell
+							457 text 처리 대기 증가
+							458 text A108 · AL-00283
+						459 cell
+							460 text MEDIUM
+						461 cell
+							462 text 90시간 47분
+							463 text 2026-10-23 01:13:00
+						464 cell
+							465 text 연결 LOT 29
+							466 text 보류 LOT 있음
+						467 cell
+							468 button 근거 보기 ↗
+					469 row
+						470 cell
+							471 text EQ-01
+							472 text TOOL-A
+						473 cell
+							474 text 처리 대기 증가
+							475 text A108 · AL-00001
+						476 cell
+							477 text MEDIUM
+						478 cell
+							479 text 40시간 10분
+							480 text 2026-10-25 03:50:00
+						481 cell
+							482 text 연결 LOT 29
+							483 text 보류 LOT 있음
+						484 cell
+							485 button 근거 보기 ↗
+					486 row
+						487 cell
+							488 text EQ-08
+							489 text TOOL-H
+						490 cell
+							491 text 센서 응답 없음
+							492 text A105 · AL-00443
+						493 cell
+							494 text MEDIUM
+						495 cell
+							496 text 21시간 11분
+							497 text 2026-10-25 22:49:00
+						498 cell
+							499 text 연결 LOT 17
+							500 text 보류 LOT 있음
+						501 cell
+							502 button 근거 보기 ↗
+					503 row
+						504 cell
+							505 text EQ-03
+							506 text TOOL-C
+						507 cell
+							508 text 처리 대기 증가
+							509 text A108 · AL-00174
+						510 cell
+							511 text MEDIUM
+						512 cell
+							513 text 16시간 34분
+							514 text 2026-10-26 03:26:00
+						515 cell
+							516 text 연결 LOT 20
+							517 text 보류 LOT 있음
+						518 cell
+							519 button 근거 보기 ↗
+					520 row
+						521 cell
+							522 text EQ-02
+							523 text TOOL-B
+						524 cell
+							525 text 압력 변동
+							526 text A104 · AL-00094
+						527 cell
+							528 text MEDIUM
+						529 cell
+							530 text 15시간 58분
+							531 text 2026-10-26 04:02:00
+						532 cell
+							533 text 연결 LOT 25
+							534 text 보류 LOT 있음
+							535 text 최근24시간 2회 · 2026-10-26 04:02:00
+						536 cell
+							537 button 근거 보기 ↗
+					538 row
+						539 cell
+							540 text EQ-05
+							541 text TOOL-E
+						542 cell
+							543 text 처리 대기 증가
+							544 text A108 · AL-00270
+						545 cell
+							546 text MEDIUM
+						547 cell
+							548 text 14시간 3분
+							549 text 2026-10-26 05:57:00
+						550 cell
+							551 text 연결 LOT 29
+							552 text 보류 LOT 있음
+						553 cell
+							554 button 근거 보기 ↗
+					555 row
+						556 cell
+							557 text EQ-09
+							558 text TOOL-I
+						559 cell
+							560 text 통신 지연
+							561 text A103 · AL-00529
+						562 cell
+							563 text LOW
+						564 cell
+							565 text 177시간 59분
+							566 text 2026-10-19 10:01:00
+						567 cell
+							568 text 연결 LOT 23
+							569 text 보류 LOT 있음
+						570 cell
+							571 button 근거 보기 ↗
+					572 row
+						573 cell
+							574 text EQ-05
+							575 text TOOL-E
+						576 cell
+							577 text 통신 지연
+							578 text A103 · AL-00245
+						579 cell
+							580 text LOW
+						581 cell
+							582 text 171시간 8분
+							583 text 2026-10-19 16:52:00
+						584 cell
+							585 text 연결 LOT 29
+							586 text 보류 LOT 있음
+						587 cell
+							588 button 근거 보기 ↗
+					589 row
+						590 cell
+							591 text EQ-10
+							592 text TOOL-J
+						593 cell
+							594 text 통신 지연
+							595 text A103 · AL-00574
+						596 cell
+							597 text LOW
+						598 cell
+							599 text 155시간 39분
+							600 text 2026-10-20 08:21:00
+						601 cell
+							602 text 연결 LOT 22
+							603 text 보류 LOT 있음
+							604 text 최근24시간 2회 · 2026-10-26 05:31:00
+						605 cell
+							606 button 근거 보기 ↗
+					607 row
+						608 cell
+							609 text EQ-03
+							610 text TOOL-C
+						611 cell
+							612 text 필터 점검 알림
+							613 text A107 · AL-00167
+						614 cell
+							615 text LOW
+						616 cell
+							617 text 120시간 37분
+							618 text 2026-10-21 19:23:00
+						619 cell
+							620 text 연결 LOT 20
+							621 text 보류 LOT 있음
+						622 cell
+							623 button 근거 보기 ↗
+					624 row
+						625 cell
+							626 text EQ-07
+							627 text TOOL-G
+						628 cell
+							629 text 통신 지연
+							630 text A103 · AL-00390
+						631 cell
+							632 text LOW
+						633 cell
+							634 text 111시간 39분
+							635 text 2026-10-22 04:21:00
+						636 cell
+							637 text 연결 LOT 20
+							638 text 보류 LOT 있음
+						639 cell
+							640 button 근거 보기 ↗
+					641 row
+						642 cell
+							643 text EQ-08
+							644 text TOOL-H
+						645 cell
+							646 text 필터 점검 알림
+							647 text A107 · AL-00426
+						648 cell
+							649 text LOW
+						650 cell
+							651 text 57시간 19분
+							652 text 2026-10-24 10:41:00
+						653 cell
+							654 text 연결 LOT 17
+							655 text 보류 LOT 있음
+						656 cell
+							657 button 근거 보기 ↗
+					658 row
+						659 cell
+							660 text EQ-08
+							661 text TOOL-H
+						662 cell
+							663 text 필터 점검 알림
+							664 text A107 · AL-00466
+						665 cell
+							666 text LOW
+						667 cell
+							668 text 35시간 15분
+							669 text 2026-10-25 08:45:00
+						670 cell
+							671 text 연결 LOT 17
+							672 text 보류 LOT 있음
+						673 cell
+							674 button 근거 보기 ↗
+					675 row
+						676 cell
+							677 text EQ-01
+							678 text TOOL-A
+						679 cell
+							680 text 필터 점검 알림
+							681 text A107 · AL-00015
+						682 cell
+							683 text LOW
+						684 cell
+							685 text 34시간 9분
+							686 text 2026-10-25 09:51:00
+						687 cell
+							688 text 연결 LOT 29
+							689 text 보류 LOT 있음
+						690 cell
+							691 button 근거 보기 ↗
+					692 row
+						693 cell
+							694 text EQ-06
+							695 text TOOL-F
+						696 cell
+							697 text 필터 점검 알림
+							698 text A107 · AL-00303
+						699 cell
+							700 text LOW
+						701 cell
+							702 text 31시간 33분
+							703 text 2026-10-25 12:27:00
+						704 cell
+							705 text 연결 LOT 28
+							706 text 보류 LOT 있음
+						707 cell
+							708 button 근거 보기 ↗
+					709 row
+						710 cell
+							711 text EQ-01
+							712 text TOOL-A
+						713 cell
+							714 text 통신 지연
+							715 text A103 · AL-00018
+						716 cell
+							717 text LOW
+						718 cell
+							719 text 28시간 6분
+							720 text 2026-10-25 15:54:00
+						721 cell
+							722 text 연결 LOT 29
+							723 text 보류 LOT 있음
+						724 cell
+							725 button 근거 보기 ↗
+					726 row
+						727 cell
+							728 text EQ-10
+							729 text TOOL-J
+						730 cell
+							731 text 필터 점검 알림
+							732 text A107 · AL-00560
+						733 cell
+							734 text LOW
+						735 cell
+							736 text 17시간 21분
+							737 text 2026-10-26 02:39:00
+						738 cell
+							739 text 연결 LOT 22
+							740 text 보류 LOT 있음
+						741 cell
+							742 button 근거 보기 ↗
+					743 row
+						744 cell
+							745 text EQ-02
+							746 text TOOL-B
+						747 cell
+							748 text 필터 점검 알림
+							749 text A107 · AL-00100
+						750 cell
+							751 text LOW
+						752 cell
+							753 text 17시간 0분
+							754 text 2026-10-26 03:00:00
+						755 cell
+							756 text 연결 LOT 25
+							757 text 보류 LOT 있음
+						758 cell
+							759 button 근거 보기 ↗
+					760 row
+						761 cell
+							762 text EQ-05
+							763 text TOOL-E
+						764 cell
+							765 text 필터 점검 알림
+							766 text A107 · AL-00259
+						767 cell
+							768 text LOW
+						769 cell
+							770 text 15시간 47분
+							771 text 2026-10-26 04:13:00
+						772 cell
+							773 text 연결 LOT 29
+							774 text 보류 LOT 있음
+						775 cell
+							776 button 근거 보기 ↗
+					777 row
+						778 cell
+							779 text EQ-10
+							780 text TOOL-J
+						781 cell
+							782 text 통신 지연
+							783 text A103 · AL-00583
+						784 cell
+							785 text LOW
+						786 cell
+							787 text 14시간 29분
+							788 text 2026-10-26 05:31:00
+						789 cell
+							790 text 연결 LOT 22
+							791 text 보류 LOT 있음
+							792 text 최근24시간 2회 · 2026-10-26 05:31:00
+						793 cell
+							794 button 근거 보기 ↗
+					795 row
+						796 cell
+							797 text EQ-05
+							798 text TOOL-E
+						799 cell
+							800 text 통신 지연
+							801 text A103 · AL-00265
+						802 cell
+							803 text LOW
+						804 cell
+							805 text 14시간 18분
+							806 text 2026-10-26 05:42:00
+						807 cell
+							808 text 연결 LOT 29
+							809 text 보류 LOT 있음
+						810 cell
+							811 button 근거 보기 ↗
+			812 text ⓘ 해결 확인된 알람 548건은 이 목록에서 제외했습니다. 재발 표시는 위험 등급을 올리지 않으며, 연결 LOT는 생산 피해가 확인됐다는 뜻이 아닙니다.
+		813 text ShiftBridge 업무 판단 지원 · 원본 수정 없음
+
+The focused UI element is 0 AXWebArea ShiftBridge · 교대 인수인계, URL: 127.0.0.1:4173/

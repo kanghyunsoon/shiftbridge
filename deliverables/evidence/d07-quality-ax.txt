@@ -1,0 +1,1594 @@
+Browser tab: 1, Title: "ShiftBridge · 교대 인수인계", URL: "http://127.0.0.1:4173/".
+0 AXWebArea ShiftBridge · 교대 인수인계, URL: 127.0.0.1:4173/
+	1 link Description: ShiftBridge 홈, Value: 127.0.0.1:4173/
+	2 container
+		3 text 생산운영  /  교대 인수인계 READ-ONLY · 로컬 CSV
+		4 text SHIFT HANDOVER
+		5 heading 다음 교대의 시작을 명확하게., Value: 1
+			6 text 다음 교대의 시작을 명확하게.
+		7 text 확인할 업무와 기록의 불확실성을 나누고, 판단의 근거까지 확인하세요.
+		8 button 인수인계 요약 ↗, ID: open-summary
+			9 text 인수인계 요약
+			10 text ↗
+		11 container 조회 조건
+			12 text 교대 기준일
+			13 date field (settable) 교대 기준일, Value: 2026-10-26, ID: shift-date
+				14 container
+					15 stepper
+					16 stepper
+					17 stepper
+				18 pop up button 날짜 선택도구 표시 날짜 선택도구 표시
+			19 text 교대 시각 · KST
+			20 pop up button (collapsed, settable) 교대 시각 · KST, Value: 20:00 · 야간 시작, ID: shift-hour, Secondary Actions: Expand
+				21 menu
+					22 08:00 · 주간 시작
+					23 (selected) 20:00 · 야간 시작
+			24 button 조회하기, ID: apply-shift
+			25 button 최근 교대, ID: latest-shift
+			26 container
+				27 text ↥ CSV 선택
+				28 button ↥ CSV 선택, ID: csv-files
+			29 button 기본 자료, ID: reload-default
+		30 text 기본 input_data 자료 · 선택한 CSV는 파일별로 대체하며 서버에 업로드하지 않습니다.
+		31 container result
+			115 text 2026-10-26 20:00:00  KST 기준 제공 기록에서 확인된 상태
+			116 container 제공 기록 기준 요약
+				117 container
+					118 text 미해결 알람 42
+					119 text 건 확인
+					120 text HIGH 18  심각도 우선 확인
+				121 container
+					122 text 인계 생산 LOT 240
+					123 text 개 확인
+					124 text 진행 59 · 보류 수량 존재 181
+				125 container
+					126 text 최근 현장 메모 4
+					127 text 개 확인
+					128 text 최근24시간 · 하한 시각 제외
+				129 container
+					130 text 상태·데이터 확인 135
+					131 text 개 항목
+					132 text 알람 상태 미확정 7건 포함
+			133 text i
+			134 text 제공 이력 이전 상태는 확인 불가
+			135 text 표시 수치는 전체 공장의 실제 건수나 수집 완료를 보장하지 않습니다.
+			136 container
+				137 tab group 인수인계 영역
+					138 tab (selectable, settable, boolean) 우선 확인 알람42, Value: 0
+					139 tab (selectable, settable, boolean) 생산·현장 업무243, Value: 0
+					140 tab (selected, settable, boolean) 상태·데이터 확인135, Value: 1
+				141 pop up button (collapsed, settable) Description: 설비 필터, Value: 모든 설비, ID: equipment-filter, Secondary Actions: Expand
+					142 menu
+						143 (selected) 모든 설비
+						144 EQ-01 · TOOL-A
+						145 EQ-02 · TOOL-B
+						146 EQ-03 · TOOL-C
+						147 EQ-04 · TOOL-D
+						148 EQ-05 · TOOL-E
+						149 EQ-06 · TOOL-F
+						150 EQ-07 · TOOL-G
+						151 EQ-08 · TOOL-H
+						152 EQ-09 · TOOL-I
+						153 EQ-10 · TOOL-J
+				154 search text field (settable) Description: 기록 검색, ID: record-search
+			155 container
+				156 heading 상태·데이터 확인 135, Value: 2
+					157 text 상태·데이터 확인  135
+				158 text 실제 조치 업무와 구분한 기록 확인 항목입니다. 확인 항목 수는 고유 LOT·알람 건수와 다릅니다.
+				159 table
+					160 row
+						161 cell
+							162 text 확인 유형
+						163 cell
+							164 text 대상
+						165 cell
+							166 text 확인이 필요한 이유
+						167 cell
+							168 text 원본 근거
+					169 row
+						170 cell
+							171 text LOT 수량·버전 모순
+							172 text LOT 데이터 확인
+						173 cell
+							174 text LOT-XBAD
+						175 cell
+							176 text 양품 수량이 투입 수량보다 큽니다. 원본 수량을 확인해주세요.
+						177 cell
+							178 text 2026-10-23 12:20:00
+							179 button 근거 보기 ↗
+					180 row
+						181 cell
+							182 text 필수값 미확인
+							183 text LOT 데이터 확인
+						184 cell
+							185 text LOT-0263
+						186 cell
+							187 text 보류 수량 미확인
+						188 cell
+							189 text 2026-10-26 09:09:00
+							190 button 근거 보기 ↗
+					191 row
+						192 cell
+							193 text 필수값 미확인
+							194 text LOT 데이터 확인
+						195 cell
+							196 text LOT-0232
+						197 cell
+							198 text 보류 수량 미확인
+						199 cell
+							200 text 2026-10-26 05:49:00
+							201 button 근거 보기 ↗
+					202 row
+						203 cell
+							204 text 필수값 미확인
+							205 text LOT 데이터 확인
+						206 cell
+							207 text LOT-0224
+						208 cell
+							209 text 보류 수량 미확인
+						210 cell
+							211 text 2026-10-26 04:51:00
+							212 button 근거 보기 ↗
+					213 row
+						214 cell
+							215 text 필수값 미확인
+							216 text LOT 데이터 확인
+						217 cell
+							218 text LOT-0064
+						219 cell
+							220 text 보류 수량 미확인
+							221 text 취소 관련 후속 업무 근거 미확인
+						222 cell
+							223 text 2026-10-26 03:55:00
+							224 button 근거 보기 ↗
+					225 row
+						226 cell
+							227 text 필수값 미확인
+							228 text LOT 데이터 확인
+						229 cell
+							230 text LOT-0271
+						231 cell
+							232 text 보류 수량 미확인
+							233 text 취소 관련 후속 업무 근거 미확인
+						234 cell
+							235 text 2026-10-26 02:55:00
+							236 button 근거 보기 ↗
+					237 row
+						238 cell
+							239 text 필수값 미확인
+							240 text LOT 데이터 확인
+						241 cell
+							242 text LOT-0231
+						243 cell
+							244 text 보류 수량 미확인
+						245 cell
+							246 text 2026-10-26 02:02:00
+							247 button 근거 보기 ↗
+					248 row
+						249 cell
+							250 text 필수값 미확인
+							251 text LOT 데이터 확인
+						252 cell
+							253 text LOT-0397
+						254 cell
+							255 text 보류 수량 미확인
+						256 cell
+							257 text 2026-10-25 23:51:00
+							258 button 근거 보기 ↗
+					259 row
+						260 cell
+							261 text 필수값 미확인
+							262 text LOT 데이터 확인
+						263 cell
+							264 text LOT-0261
+						265 cell
+							266 text 보류 수량 미확인
+							267 text 취소 관련 후속 업무 근거 미확인
+						268 cell
+							269 text 2026-10-25 23:49:00
+							270 button 근거 보기 ↗
+					271 row
+						272 cell
+							273 text 필수값 미확인
+							274 text LOT 데이터 확인
+						275 cell
+							276 text LOT-0118
+						277 cell
+							278 text 보류 수량 미확인
+						279 cell
+							280 text 2026-10-25 20:40:00
+							281 button 근거 보기 ↗
+					282 row
+						283 cell
+							284 text 필수값 미확인
+							285 text LOT 데이터 확인
+						286 cell
+							287 text LOT-0331
+						288 cell
+							289 text 보류 수량 미확인
+						290 cell
+							291 text 2026-10-25 19:28:00
+							292 button 근거 보기 ↗
+					293 row
+						294 cell
+							295 text 필수값 미확인
+							296 text LOT 데이터 확인
+						297 cell
+							298 text LOT-0032
+						299 cell
+							300 text 보류 수량 미확인
+						301 cell
+							302 text 2026-10-25 13:45:00
+							303 button 근거 보기 ↗
+					304 row
+						305 cell
+							306 text 필수값 미확인
+							307 text LOT 데이터 확인
+						308 cell
+							309 text LOT-0095
+						310 cell
+							311 text 보류 수량 미확인
+						312 cell
+							313 text 2026-10-25 13:08:00
+							314 button 근거 보기 ↗
+					315 row
+						316 cell
+							317 text 필수값 미확인
+							318 text LOT 데이터 확인
+						319 cell
+							320 text LOT-0234
+						321 cell
+							322 text 보류 수량 미확인
+						323 cell
+							324 text 2026-10-25 13:00:00
+							325 button 근거 보기 ↗
+					326 row
+						327 cell
+							328 text 필수값 미확인
+							329 text LOT 데이터 확인
+						330 cell
+							331 text LOT-0194
+						332 cell
+							333 text 보류 수량 미확인
+						334 cell
+							335 text 2026-10-25 10:11:00
+							336 button 근거 보기 ↗
+					337 row
+						338 cell
+							339 text 필수값 미확인
+							340 text LOT 데이터 확인
+						341 cell
+							342 text LOT-0132
+						343 cell
+							344 text 보류 수량 미확인
+						345 cell
+							346 text 2026-10-25 06:56:00
+							347 button 근거 보기 ↗
+					348 row
+						349 cell
+							350 text 필수값 미확인
+							351 text LOT 데이터 확인
+						352 cell
+							353 text LOT-0010
+						354 cell
+							355 text 보류 수량 미확인
+							356 text 취소 관련 후속 업무 근거 미확인
+						357 cell
+							358 text 2026-10-25 06:37:00
+							359 button 근거 보기 ↗
+					360 row
+						361 cell
+							362 text 필수값 미확인
+							363 text LOT 데이터 확인
+						364 cell
+							365 text LOT-0179
+						366 cell
+							367 text 보류 수량 미확인
+						368 cell
+							369 text 2026-10-25 05:19:00
+							370 button 근거 보기 ↗
+					371 row
+						372 cell
+							373 text 필수값 미확인
+							374 text LOT 데이터 확인
+						375 cell
+							376 text LOT-0178
+						377 cell
+							378 text 보류 수량 미확인
+						379 cell
+							380 text 2026-10-25 03:14:00
+							381 button 근거 보기 ↗
+					382 row
+						383 cell
+							384 text 필수값 미확인
+							385 text LOT 데이터 확인
+						386 cell
+							387 text LOT-0077
+						388 cell
+							389 text 보류 수량 미확인
+						390 cell
+							391 text 2026-10-25 01:45:00
+							392 button 근거 보기 ↗
+					393 row
+						394 cell
+							395 text 필수값 미확인
+							396 text LOT 데이터 확인
+						397 cell
+							398 text LOT-0195
+						399 cell
+							400 text 보류 수량 미확인
+						401 cell
+							402 text 2026-10-24 23:36:00
+							403 button 근거 보기 ↗
+					404 row
+						405 cell
+							406 text 필수값 미확인
+							407 text LOT 데이터 확인
+						408 cell
+							409 text LOT-0130
+						410 cell
+							411 text 보류 수량 미확인
+						412 cell
+							413 text 2026-10-24 18:37:00
+							414 button 근거 보기 ↗
+					415 row
+						416 cell
+							417 text 필수값 미확인
+							418 text LOT 데이터 확인
+						419 cell
+							420 text LOT-0332
+						421 cell
+							422 text 보류 수량 미확인
+						423 cell
+							424 text 2026-10-24 17:09:00
+							425 button 근거 보기 ↗
+					426 row
+						427 cell
+							428 text 필수값 미확인
+							429 text LOT 데이터 확인
+						430 cell
+							431 text LOT-0143
+						432 cell
+							433 text 보류 수량 미확인
+							434 text 취소 관련 후속 업무 근거 미확인
+						435 cell
+							436 text 2026-10-24 17:00:00
+							437 button 근거 보기 ↗
+					438 row
+						439 cell
+							440 text 필수값 미확인
+							441 text LOT 데이터 확인
+						442 cell
+							443 text LOT-0054
+						444 cell
+							445 text 보류 수량 미확인
+						446 cell
+							447 text 2026-10-24 10:25:00
+							448 button 근거 보기 ↗
+					449 row
+						450 cell
+							451 text 필수값 미확인
+							452 text LOT 데이터 확인
+						453 cell
+							454 text LOT-0192
+						455 cell
+							456 text 보류 수량 미확인
+						457 cell
+							458 text 2026-10-24 09:49:00
+							459 button 근거 보기 ↗
+					460 row
+						461 cell
+							462 text 필수값 미확인
+							463 text LOT 데이터 확인
+						464 cell
+							465 text LOT-0109
+						466 cell
+							467 text 보류 수량 미확인
+						468 cell
+							469 text 2026-10-24 09:01:00
+							470 button 근거 보기 ↗
+					471 row
+						472 cell
+							473 text 필수값 미확인
+							474 text LOT 데이터 확인
+						475 cell
+							476 text LOT-0201
+						477 cell
+							478 text 보류 수량 미확인
+						479 cell
+							480 text 2026-10-24 08:28:00
+							481 button 근거 보기 ↗
+					482 row
+						483 cell
+							484 text 필수값 미확인
+							485 text LOT 데이터 확인
+						486 cell
+							487 text LOT-0093
+						488 cell
+							489 text 보류 수량 미확인
+						490 cell
+							491 text 2026-10-24 04:48:00
+							492 button 근거 보기 ↗
+					493 row
+						494 cell
+							495 text 필수값 미확인
+							496 text LOT 데이터 확인
+						497 cell
+							498 text LOT-0320
+						499 cell
+							500 text 보류 수량 미확인
+							501 text 취소 관련 후속 업무 근거 미확인
+						502 cell
+							503 text 2026-10-24 02:12:00
+							504 button 근거 보기 ↗
+					505 row
+						506 cell
+							507 text 필수값 미확인
+							508 text LOT 데이터 확인
+						509 cell
+							510 text LOT-0184
+						511 cell
+							512 text 보류 수량 미확인
+						513 cell
+							514 text 2026-10-23 20:22:00
+							515 button 근거 보기 ↗
+					516 row
+						517 cell
+							518 text 필수값 미확인
+							519 text LOT 데이터 확인
+						520 cell
+							521 text LOT-0278
+						522 cell
+							523 text 보류 수량 미확인
+							524 text 취소 관련 후속 업무 근거 미확인
+						525 cell
+							526 text 2026-10-23 17:52:00
+							527 button 근거 보기 ↗
+					528 row
+						529 cell
+							530 text 필수값 미확인
+							531 text LOT 데이터 확인
+						532 cell
+							533 text LOT-0314
+						534 cell
+							535 text 보류 수량 미확인
+						536 cell
+							537 text 2026-10-23 17:40:00
+							538 button 근거 보기 ↗
+					539 row
+						540 cell
+							541 text 필수값 미확인
+							542 text LOT 데이터 확인
+						543 cell
+							544 text LOT-0061
+						545 cell
+							546 text 보류 수량 미확인
+						547 cell
+							548 text 2026-10-23 17:10:00
+							549 button 근거 보기 ↗
+					550 row
+						551 cell
+							552 text 필수값 미확인
+							553 text LOT 데이터 확인
+						554 cell
+							555 text LOT-0197
+						556 cell
+							557 text 보류 수량 미확인
+						558 cell
+							559 text 2026-10-23 12:48:00
+							560 button 근거 보기 ↗
+					561 row
+						562 cell
+							563 text 필수값 미확인
+							564 text LOT 데이터 확인
+						565 cell
+							566 text LOT-0182
+						567 cell
+							568 text 보류 수량 미확인
+							569 text 취소 관련 후속 업무 근거 미확인
+						570 cell
+							571 text 2026-10-23 09:47:00
+							572 button 근거 보기 ↗
+					573 row
+						574 cell
+							575 text 필수값 미확인
+							576 text LOT 데이터 확인
+						577 cell
+							578 text LOT-0258
+						579 cell
+							580 text 보류 수량 미확인
+						581 cell
+							582 text 2026-10-23 06:25:00
+							583 button 근거 보기 ↗
+					584 row
+						585 cell
+							586 text 필수값 미확인
+							587 text LOT 데이터 확인
+						588 cell
+							589 text LOT-0120
+						590 cell
+							591 text 보류 수량 미확인
+						592 cell
+							593 text 2026-10-23 03:05:00
+							594 button 근거 보기 ↗
+					595 row
+						596 cell
+							597 text 필수값 미확인
+							598 text LOT 데이터 확인
+						599 cell
+							600 text LOT-0027
+						601 cell
+							602 text 보류 수량 미확인
+							603 text 취소 관련 후속 업무 근거 미확인
+						604 cell
+							605 text 2026-10-23 02:23:00
+							606 button 근거 보기 ↗
+					607 row
+						608 cell
+							609 text 필수값 미확인
+							610 text LOT 데이터 확인
+						611 cell
+							612 text LOT-0279
+						613 cell
+							614 text 보류 수량 미확인
+						615 cell
+							616 text 2026-10-22 22:22:00
+							617 button 근거 보기 ↗
+					618 row
+						619 cell
+							620 text 필수값 미확인
+							621 text LOT 데이터 확인
+						622 cell
+							623 text LOT-0216
+						624 cell
+							625 text 보류 수량 미확인
+						626 cell
+							627 text 2026-10-22 20:24:00
+							628 button 근거 보기 ↗
+					629 row
+						630 cell
+							631 text 필수값 미확인
+							632 text LOT 데이터 확인
+						633 cell
+							634 text LOT-0385
+						635 cell
+							636 text 보류 수량 미확인
+						637 cell
+							638 text 2026-10-22 19:12:00
+							639 button 근거 보기 ↗
+					640 row
+						641 cell
+							642 text 필수값 미확인
+							643 text LOT 데이터 확인
+						644 cell
+							645 text LOT-0016
+						646 cell
+							647 text 보류 수량 미확인
+							648 text 취소 관련 후속 업무 근거 미확인
+						649 cell
+							650 text 2026-10-22 16:25:00
+							651 button 근거 보기 ↗
+					652 row
+						653 cell
+							654 text 필수값 미확인
+							655 text LOT 데이터 확인
+						656 cell
+							657 text LOT-0116
+						658 cell
+							659 text 보류 수량 미확인
+						660 cell
+							661 text 2026-10-22 15:11:00
+							662 button 근거 보기 ↗
+					663 row
+						664 cell
+							665 text 필수값 미확인
+							666 text LOT 데이터 확인
+						667 cell
+							668 text LOT-0175
+						669 cell
+							670 text 보류 수량 미확인
+						671 cell
+							672 text 2026-10-22 14:15:00
+							673 button 근거 보기 ↗
+					674 row
+						675 cell
+							676 text 필수값 미확인
+							677 text LOT 데이터 확인
+						678 cell
+							679 text LOT-0029
+						680 cell
+							681 text 보류 수량 미확인
+						682 cell
+							683 text 2026-10-22 13:46:00
+							684 button 근거 보기 ↗
+					685 row
+						686 cell
+							687 text 필수값 미확인
+							688 text LOT 데이터 확인
+						689 cell
+							690 text LOT-0343
+						691 cell
+							692 text 보류 수량 미확인
+						693 cell
+							694 text 2026-10-22 12:26:00
+							695 button 근거 보기 ↗
+					696 row
+						697 cell
+							698 text 필수값 미확인
+							699 text LOT 데이터 확인
+						700 cell
+							701 text LOT-0376
+						702 cell
+							703 text 보류 수량 미확인
+							704 text 취소 관련 후속 업무 근거 미확인
+						705 cell
+							706 text 2026-10-22 10:41:00
+							707 button 근거 보기 ↗
+					708 row
+						709 cell
+							710 text 필수값 미확인
+							711 text LOT 데이터 확인
+						712 cell
+							713 text LOT-0371
+						714 cell
+							715 text 보류 수량 미확인
+						716 cell
+							717 text 2026-10-22 04:35:00
+							718 button 근거 보기 ↗
+					719 row
+						720 cell
+							721 text 필수값 미확인
+							722 text LOT 데이터 확인
+						723 cell
+							724 text LOT-0386
+						725 cell
+							726 text 보류 수량 미확인
+						727 cell
+							728 text 2026-10-22 02:58:00
+							729 button 근거 보기 ↗
+					730 row
+						731 cell
+							732 text 필수값 미확인
+							733 text LOT 데이터 확인
+						734 cell
+							735 text LOT-0405
+						736 cell
+							737 text 보류 수량 미확인
+						738 cell
+							739 text 2026-10-22 02:01:00
+							740 button 근거 보기 ↗
+					741 row
+						742 cell
+							743 text 필수값 미확인
+							744 text LOT 데이터 확인
+						745 cell
+							746 text LOT-0240
+						747 cell
+							748 text 보류 수량 미확인
+						749 cell
+							750 text 2026-10-21 16:31:00
+							751 button 근거 보기 ↗
+					752 row
+						753 cell
+							754 text 필수값 미확인
+							755 text LOT 데이터 확인
+						756 cell
+							757 text LOT-0282
+						758 cell
+							759 text 보류 수량 미확인
+						760 cell
+							761 text 2026-10-21 15:43:00
+							762 button 근거 보기 ↗
+					763 row
+						764 cell
+							765 text 필수값 미확인
+							766 text LOT 데이터 확인
+						767 cell
+							768 text LOT-0052
+						769 cell
+							770 text 보류 수량 미확인
+						771 cell
+							772 text 2026-10-21 15:31:00
+							773 button 근거 보기 ↗
+					774 row
+						775 cell
+							776 text 필수값 미확인
+							777 text LOT 데이터 확인
+						778 cell
+							779 text LOT-0134
+						780 cell
+							781 text 보류 수량 미확인
+						782 cell
+							783 text 2026-10-21 12:00:00
+							784 button 근거 보기 ↗
+					785 row
+						786 cell
+							787 text 필수값 미확인
+							788 text LOT 데이터 확인
+						789 cell
+							790 text LOT-0251
+						791 cell
+							792 text 보류 수량 미확인
+						793 cell
+							794 text 2026-10-21 10:52:00
+							795 button 근거 보기 ↗
+					796 row
+						797 cell
+							798 text 필수값 미확인
+							799 text LOT 데이터 확인
+						800 cell
+							801 text LOT-0021
+						802 cell
+							803 text 보류 수량 미확인
+						804 cell
+							805 text 2026-10-21 09:56:00
+							806 button 근거 보기 ↗
+					807 row
+						808 cell
+							809 text 필수값 미확인
+							810 text LOT 데이터 확인
+						811 cell
+							812 text LOT-0321
+						813 cell
+							814 text 보류 수량 미확인
+							815 text 취소 관련 후속 업무 근거 미확인
+						816 cell
+							817 text 2026-10-21 08:08:00
+							818 button 근거 보기 ↗
+					819 row
+						820 cell
+							821 text 필수값 미확인
+							822 text LOT 데이터 확인
+						823 cell
+							824 text LOT-0104
+						825 cell
+							826 text 보류 수량 미확인
+						827 cell
+							828 text 2026-10-21 03:02:00
+							829 button 근거 보기 ↗
+					830 row
+						831 cell
+							832 text 필수값 미확인
+							833 text LOT 데이터 확인
+						834 cell
+							835 text LOT-0315
+						836 cell
+							837 text 보류 수량 미확인
+						838 cell
+							839 text 2026-10-21 01:53:00
+							840 button 근거 보기 ↗
+					841 row
+						842 cell
+							843 text 필수값 미확인
+							844 text LOT 데이터 확인
+						845 cell
+							846 text LOT-0383
+						847 cell
+							848 text 보류 수량 미확인
+						849 cell
+							850 text 2026-10-20 20:25:00
+							851 button 근거 보기 ↗
+					852 row
+						853 cell
+							854 text 필수값 미확인
+							855 text LOT 데이터 확인
+						856 cell
+							857 text LOT-0154
+						858 cell
+							859 text 보류 수량 미확인
+						860 cell
+							861 text 2026-10-20 18:03:00
+							862 button 근거 보기 ↗
+					863 row
+						864 cell
+							865 text 필수값 미확인
+							866 text LOT 데이터 확인
+						867 cell
+							868 text LOT-0069
+						869 cell
+							870 text 보류 수량 미확인
+						871 cell
+							872 text 2026-10-20 18:01:00
+							873 button 근거 보기 ↗
+					874 row
+						875 cell
+							876 text 필수값 미확인
+							877 text LOT 데이터 확인
+						878 cell
+							879 text LOT-0003
+						880 cell
+							881 text 보류 수량 미확인
+						882 cell
+							883 text 2026-10-20 15:48:00
+							884 button 근거 보기 ↗
+					885 row
+						886 cell
+							887 text 필수값 미확인
+							888 text LOT 데이터 확인
+						889 cell
+							890 text LOT-0269
+						891 cell
+							892 text 보류 수량 미확인
+						893 cell
+							894 text 2026-10-20 15:12:00
+							895 button 근거 보기 ↗
+					896 row
+						897 cell
+							898 text 필수값 미확인
+							899 text LOT 데이터 확인
+						900 cell
+							901 text LOT-0222
+						902 cell
+							903 text 보류 수량 미확인
+						904 cell
+							905 text 2026-10-20 14:36:00
+							906 button 근거 보기 ↗
+					907 row
+						908 cell
+							909 text 필수값 미확인
+							910 text LOT 데이터 확인
+						911 cell
+							912 text LOT-0365
+						913 cell
+							914 text 보류 수량 미확인
+						915 cell
+							916 text 2026-10-20 08:51:00
+							917 button 근거 보기 ↗
+					918 row
+						919 cell
+							920 text 필수값 미확인
+							921 text LOT 데이터 확인
+						922 cell
+							923 text LOT-0349
+						924 cell
+							925 text 보류 수량 미확인
+							926 text 취소 관련 후속 업무 근거 미확인
+						927 cell
+							928 text 2026-10-20 08:26:00
+							929 button 근거 보기 ↗
+					930 row
+						931 cell
+							932 text 필수값 미확인
+							933 text LOT 데이터 확인
+						934 cell
+							935 text LOT-0205
+						936 cell
+							937 text 보류 수량 미확인
+							938 text 취소 관련 후속 업무 근거 미확인
+						939 cell
+							940 text 2026-10-20 07:09:00
+							941 button 근거 보기 ↗
+					942 row
+						943 cell
+							944 text 필수값 미확인
+							945 text LOT 데이터 확인
+						946 cell
+							947 text LOT-0117
+						948 cell
+							949 text 보류 수량 미확인
+						950 cell
+							951 text 2026-10-19 08:42:00
+							952 button 근거 보기 ↗
+					953 row
+						954 cell
+							955 text 필수값 미확인
+							956 text LOT 데이터 확인
+						957 cell
+							958 text LOT-0112
+						959 cell
+							960 text 보류 수량 미확인
+						961 cell
+							962 text 2026-10-19 08:25:00
+							963 button 근거 보기 ↗
+					964 row
+						965 cell
+							966 text 필수값 미확인
+							967 text LOT 데이터 확인
+						968 cell
+							969 text LOT-0285
+						970 cell
+							971 text 보류 수량 미확인
+						972 cell
+							973 text 2026-10-19 02:28:00
+							974 button 근거 보기 ↗
+					975 row
+						976 cell
+							977 text 필수값 미확인
+							978 text LOT 데이터 확인
+						979 cell
+							980 text LOT-0129
+						981 cell
+							982 text 보류 수량 미확인
+						983 cell
+							984 text 2026-10-19 01:12:00
+							985 button 근거 보기 ↗
+					986 row
+						987 cell
+							988 text 필수값 미확인
+							989 text LOT 데이터 확인
+						990 cell
+							991 text LOT-0075
+						992 cell
+							993 text 보류 수량 미확인
+						994 cell
+							995 text 2026-10-18 23:54:00
+							996 button 근거 보기 ↗
+					997 row
+						998 cell
+							999 text 연결 관계 불일치
+							1000 text 현장 메모 확인
+						1001 cell
+							1002 text NOTE-0055
+						1003 cell
+							1004 text 연결 관계 확인 필요
+						1005 cell
+							1006 text 2026-10-26 04:59:00
+							1007 button 근거 보기 ↗
+					1008 row
+						1009 cell
+							1010 text 연결 관계 불일치
+							1011 text 현장 메모 확인
+						1012 cell
+							1013 text NOTE-0059
+						1014 cell
+							1015 text 연결 관계 확인 필요
+						1016 cell
+							1017 text 2026-10-26 03:26:00
+							1018 button 근거 보기 ↗
+					1019 row
+						1020 cell
+							1021 text 연결 관계 불일치
+							1022 text 현장 메모 확인
+						1023 cell
+							1024 text NOTE-0057
+						1025 cell
+							1026 text 연결 관계 확인 필요
+						1027 cell
+							1028 text 2026-10-26 02:26:00
+							1029 button 근거 보기 ↗
+					1030 row
+						1031 cell
+							1032 text 연결 관계 불일치
+							1033 text 현장 메모 확인
+						1034 cell
+							1035 text NOTE-0017
+						1036 cell
+							1037 text 연결 관계 확인 필요
+							1038 text 후속 요청 여부 확인 필요
+						1039 cell
+							1040 text 2026-10-25 20:49:00
+							1041 button 근거 보기 ↗
+					1042 row
+						1043 cell
+							1044 text 연결 관계 불일치
+							1045 text 현장 메모 확인
+						1046 cell
+							1047 text NOTE-0014
+						1048 cell
+							1049 text 연결 관계 확인 필요
+						1050 cell
+							1051 text 2026-10-25 20:21:00
+							1052 button 근거 보기 ↗
+					1053 row
+						1054 cell
+							1055 text 연결 관계 불일치
+							1056 text 현장 메모 확인
+						1057 cell
+							1058 text NOTE-0009
+						1059 cell
+							1060 text 연결 관계 확인 필요
+						1061 cell
+							1062 text 2026-10-25 17:34:00
+							1063 button 근거 보기 ↗
+					1064 row
+						1065 cell
+							1066 text 연결 관계 불일치
+							1067 text 현장 메모 확인
+						1068 cell
+							1069 text NOTE-0044
+						1070 cell
+							1071 text 연결 관계 확인 필요
+						1072 cell
+							1073 text 2026-10-25 14:13:00
+							1074 button 근거 보기 ↗
+					1075 row
+						1076 cell
+							1077 text 연결 관계 불일치
+							1078 text 현장 메모 확인
+						1079 cell
+							1080 text NOTE-0032
+						1081 cell
+							1082 text 연결 관계 확인 필요
+						1083 cell
+							1084 text 2026-10-25 13:45:00
+							1085 button 근거 보기 ↗
+					1086 row
+						1087 cell
+							1088 text 연결 관계 불일치
+							1089 text 현장 메모 확인
+						1090 cell
+							1091 text NOTE-0004
+						1092 cell
+							1093 text 연결 관계 확인 필요
+						1094 cell
+							1095 text 2026-10-25 12:35:00
+							1096 button 근거 보기 ↗
+					1097 row
+						1098 cell
+							1099 text 연결 관계 불일치
+							1100 text 현장 메모 확인
+						1101 cell
+							1102 text NOTE-0010
+						1103 cell
+							1104 text 연결 관계 확인 필요
+						1105 cell
+							1106 text 2026-10-25 09:50:00
+							1107 button 근거 보기 ↗
+					1108 row
+						1109 cell
+							1110 text 연결 관계 불일치
+							1111 text 현장 메모 확인
+						1112 cell
+							1113 text NOTE-0011
+						1114 cell
+							1115 text 연결 관계 확인 필요
+						1116 cell
+							1117 text 2026-10-25 09:12:00
+							1118 button 근거 보기 ↗
+					1119 row
+						1120 cell
+							1121 text 연결 관계 불일치
+							1122 text 현장 메모 확인
+						1123 cell
+							1124 text NOTE-0072
+						1125 cell
+							1126 text 연결 관계 확인 필요
+						1127 cell
+							1128 text 2026-10-25 04:54:00
+							1129 button 근거 보기 ↗
+					1130 row
+						1131 cell
+							1132 text 연결 관계 불일치
+							1133 text 현장 메모 확인
+						1134 cell
+							1135 text NOTE-0058
+						1136 cell
+							1137 text 연결 관계 확인 필요
+							1138 text 후속 요청 여부 확인 필요
+						1139 cell
+							1140 text 2026-10-25 04:01:00
+							1141 button 근거 보기 ↗
+					1142 row
+						1143 cell
+							1144 text 연결 관계 불일치
+							1145 text 현장 메모 확인
+						1146 cell
+							1147 text NOTE-0031
+						1148 cell
+							1149 text 연결 관계 확인 필요
+						1150 cell
+							1151 text 2026-10-25 02:20:00
+							1152 button 근거 보기 ↗
+					1153 row
+						1154 cell
+							1155 text 연결 관계 불일치
+							1156 text 현장 메모 확인
+						1157 cell
+							1158 text NOTE-0015
+						1159 cell
+							1160 text 연결 관계 확인 필요
+						1161 cell
+							1162 text 2026-10-25 00:32:00
+							1163 button 근거 보기 ↗
+					1164 row
+						1165 cell
+							1166 text 연결 관계 불일치
+							1167 text 현장 메모 확인
+						1168 cell
+							1169 text NOTE-0039
+						1170 cell
+							1171 text 연결 관계 확인 필요
+						1172 cell
+							1173 text 2026-10-24 23:37:00
+							1174 button 근거 보기 ↗
+					1175 row
+						1176 cell
+							1177 text 연결 관계 불일치
+							1178 text 현장 메모 확인
+						1179 cell
+							1180 text NOTE-0050
+						1181 cell
+							1182 text 연결 관계 확인 필요
+						1183 cell
+							1184 text 2026-10-24 22:28:00
+							1185 button 근거 보기 ↗
+					1186 row
+						1187 cell
+							1188 text 연결 관계 불일치
+							1189 text 현장 메모 확인
+						1190 cell
+							1191 text NOTE-0003
+						1192 cell
+							1193 text 연결 관계 확인 필요
+						1194 cell
+							1195 text 2026-10-24 22:26:00
+							1196 button 근거 보기 ↗
+					1197 row
+						1198 cell
+							1199 text 연결 관계 불일치
+							1200 text 현장 메모 확인
+						1201 cell
+							1202 text NOTE-0088
+						1203 cell
+							1204 text 연결 관계 확인 필요
+						1205 cell
+							1206 text 2026-10-24 20:58:00
+							1207 button 근거 보기 ↗
+					1208 row
+						1209 cell
+							1210 text 연결 관계 불일치
+							1211 text 현장 메모 확인
+						1212 cell
+							1213 text NOTE-0035
+						1214 cell
+							1215 text 연결 관계 확인 필요
+						1216 cell
+							1217 text 2026-10-24 17:29:00
+							1218 button 근거 보기 ↗
+					1219 row
+						1220 cell
+							1221 text 연결 관계 불일치
+							1222 text 현장 메모 확인
+						1223 cell
+							1224 text NOTE-0067
+						1225 cell
+							1226 text 연결 관계 확인 필요
+						1227 cell
+							1228 text 2026-10-24 09:01:00
+							1229 button 근거 보기 ↗
+					1230 row
+						1231 cell
+							1232 text 연결 관계 불일치
+							1233 text 현장 메모 확인
+						1234 cell
+							1235 text NOTE-0069
+						1236 cell
+							1237 text 연결 관계 확인 필요
+						1238 cell
+							1239 text 2026-10-24 07:37:00
+							1240 button 근거 보기 ↗
+					1241 row
+						1242 cell
+							1243 text 연결 관계 불일치
+							1244 text 현장 메모 확인
+						1245 cell
+							1246 text NOTE-0006
+						1247 cell
+							1248 text 연결 관계 확인 필요
+						1249 cell
+							1250 text 2026-10-24 02:12:00
+							1251 button 근거 보기 ↗
+					1252 row
+						1253 cell
+							1254 text 연결 관계 불일치
+							1255 text 현장 메모 확인
+						1256 cell
+							1257 text NOTE-0026
+						1258 cell
+							1259 text 연결 관계 확인 필요
+							1260 text 후속 요청 여부 확인 필요
+						1261 cell
+							1262 text 2026-10-24 02:03:00
+							1263 button 근거 보기 ↗
+					1264 row
+						1265 cell
+							1266 text 연결 관계 불일치
+							1267 text 현장 메모 확인
+						1268 cell
+							1269 text NOTE-0047
+						1270 cell
+							1271 text 연결 관계 확인 필요
+						1272 cell
+							1273 text 2026-10-23 17:39:00
+							1274 button 근거 보기 ↗
+					1275 row
+						1276 cell
+							1277 text 연결 관계 불일치
+							1278 text 현장 메모 확인
+						1279 cell
+							1280 text NOTE-0066
+						1281 cell
+							1282 text 연결 관계 확인 필요
+						1283 cell
+							1284 text 2026-10-23 14:57:00
+							1285 button 근거 보기 ↗
+					1286 row
+						1287 cell
+							1288 text 연결 관계 불일치
+							1289 text 현장 메모 확인
+						1290 cell
+							1291 text NOTE-0053
+						1292 cell
+							1293 text 연결 관계 확인 필요
+						1294 cell
+							1295 text 2026-10-23 13:41:00
+							1296 button 근거 보기 ↗
+					1297 row
+						1298 cell
+							1299 text 연결 관계 불일치
+							1300 text 현장 메모 확인
+						1301 cell
+							1302 text NOTE-0061
+						1303 cell
+							1304 text 연결 관계 확인 필요
+						1305 cell
+							1306 text 2026-10-23 01:51:00
+							1307 button 근거 보기 ↗
+					1308 row
+						1309 cell
+							1310 text 연결 관계 불일치
+							1311 text 현장 메모 확인
+						1312 cell
+							1313 text NOTE-0062
+						1314 cell
+							1315 text 연결 관계 확인 필요
+						1316 cell
+							1317 text 2026-10-22 21:43:00
+							1318 button 근거 보기 ↗
+					1319 row
+						1320 cell
+							1321 text 연결 관계 불일치
+							1322 text 현장 메모 확인
+						1323 cell
+							1324 text NOTE-0007
+						1325 cell
+							1326 text 연결 관계 확인 필요
+						1327 cell
+							1328 text 2026-10-22 18:52:00
+							1329 button 근거 보기 ↗
+					1330 row
+						1331 cell
+							1332 text 연결 관계 불일치
+							1333 text 현장 메모 확인
+						1334 cell
+							1335 text NOTE-0078
+						1336 cell
+							1337 text 연결 관계 확인 필요
+						1338 cell
+							1339 text 2026-10-22 18:40:00
+							1340 button 근거 보기 ↗
+					1341 row
+						1342 cell
+							1343 text 연결 관계 불일치
+							1344 text 현장 메모 확인
+						1345 cell
+							1346 text NOTE-0024
+						1347 cell
+							1348 text 연결 관계 확인 필요
+						1349 cell
+							1350 text 2026-10-22 16:47:00
+							1351 button 근거 보기 ↗
+					1352 row
+						1353 cell
+							1354 text 연결 관계 불일치
+							1355 text 현장 메모 확인
+						1356 cell
+							1357 text NOTE-0033
+						1358 cell
+							1359 text 연결 관계 확인 필요
+						1360 cell
+							1361 text 2026-10-22 14:15:00
+							1362 button 근거 보기 ↗
+					1363 row
+						1364 cell
+							1365 text 연결 관계 불일치
+							1366 text 현장 메모 확인
+						1367 cell
+							1368 text NOTE-0070
+						1369 cell
+							1370 text 연결 관계 확인 필요
+						1371 cell
+							1372 text 2026-10-22 14:01:00
+							1373 button 근거 보기 ↗
+					1374 row
+						1375 cell
+							1376 text 연결 관계 불일치
+							1377 text 현장 메모 확인
+						1378 cell
+							1379 text NOTE-0019
+						1380 cell
+							1381 text 연결 관계 확인 필요
+						1382 cell
+							1383 text 2026-10-22 12:26:00
+							1384 button 근거 보기 ↗
+					1385 row
+						1386 cell
+							1387 text 연결 관계 불일치
+							1388 text 현장 메모 확인
+						1389 cell
+							1390 text NOTE-0021
+						1391 cell
+							1392 text 연결 관계 확인 필요
+						1393 cell
+							1394 text 2026-10-22 12:12:00
+							1395 button 근거 보기 ↗
+					1396 row
+						1397 cell
+							1398 text 연결 관계 불일치
+							1399 text 현장 메모 확인
+						1400 cell
+							1401 text NOTE-0076
+						1402 cell
+							1403 text 연결 관계 확인 필요
+						1404 cell
+							1405 text 2026-10-22 04:57:00
+							1406 button 근거 보기 ↗
+					1407 row
+						1408 cell
+							1409 text 연결 관계 불일치
+							1410 text 현장 메모 확인
+						1411 cell
+							1412 text NOTE-0063
+						1413 cell
+							1414 text 연결 관계 확인 필요
+						1415 cell
+							1416 text 2026-10-21 23:59:00
+							1417 button 근거 보기 ↗
+					1418 row
+						1419 cell
+							1420 text 연결 관계 불일치
+							1421 text 현장 메모 확인
+						1422 cell
+							1423 text NOTE-0002
+						1424 cell
+							1425 text 연결 관계 확인 필요
+						1426 cell
+							1427 text 2026-10-21 15:01:00
+							1428 button 근거 보기 ↗
+					1429 row
+						1430 cell
+							1431 text 연결 관계 불일치
+							1432 text 현장 메모 확인
+						1433 cell
+							1434 text NOTE-0083
+						1435 cell
+							1436 text 연결 관계 확인 필요
+						1437 cell
+							1438 text 2026-10-21 13:30:00
+							1439 button 근거 보기 ↗
+					1440 row
+						1441 cell
+							1442 text 연결 관계 불일치
+							1443 text 현장 메모 확인
+						1444 cell
+							1445 text NOTE-0013
+						1446 cell
+							1447 text 연결 관계 확인 필요
+							1448 text 후속 요청 여부 확인 필요
+						1449 cell
+							1450 text 2026-10-21 06:19:00
+							1451 button 근거 보기 ↗
+					1452 row
+						1453 cell
+							1454 text 연결 관계 불일치
+							1455 text 현장 메모 확인
+						1456 cell
+							1457 text NOTE-0034
+						1458 cell
+							1459 text 연결 관계 확인 필요
+						1460 cell
+							1461 text 2026-10-21 04:31:00
+							1462 button 근거 보기 ↗
+					1463 row
+						1464 cell
+							1465 text 연결 관계 불일치
+							1466 text 현장 메모 확인
+						1467 cell
+							1468 text NOTE-0005
+						1469 cell
+							1470 text 연결 관계 확인 필요
+						1471 cell
+							1472 text 2026-10-20 22:17:00
+							1473 button 근거 보기 ↗
+					1474 row
+						1475 cell
+							1476 text 연결 관계 불일치
+							1477 text 현장 메모 확인
+						1478 cell
+							1479 text NOTE-0037
+						1480 cell
+							1481 text 연결 관계 확인 필요
+						1482 cell
+							1483 text 2026-10-20 10:13:00
+							1484 button 근거 보기 ↗
+					1485 row
+						1486 cell
+							1487 text 연결 관계 불일치
+							1488 text 현장 메모 확인
+						1489 cell
+							1490 text NOTE-0075
+						1491 cell
+							1492 text 연결 관계 확인 필요
+						1493 cell
+							1494 text 2026-10-19 23:59:00
+							1495 button 근거 보기 ↗
+					1496 row
+						1497 cell
+							1498 text 연결 관계 불일치
+							1499 text 현장 메모 확인
+						1500 cell
+							1501 text NOTE-0048
+						1502 cell
+							1503 text 연결 관계 확인 필요
+						1504 cell
+							1505 text 2026-10-19 22:09:00
+							1506 button 근거 보기 ↗
+					1507 row
+						1508 cell
+							1509 text 연결 관계 불일치
+							1510 text 현장 메모 확인
+						1511 cell
+							1512 text NOTE-0085
+						1513 cell
+							1514 text 연결 관계 확인 필요
+						1515 cell
+							1516 text 2026-10-19 12:23:00
+							1517 button 근거 보기 ↗
+					1518 row
+						1519 cell
+							1520 text 연결 관계 불일치
+							1521 text 현장 메모 확인
+						1522 cell
+							1523 text NOTE-0077
+						1524 cell
+							1525 text 연결 관계 확인 필요
+						1526 cell
+							1527 text 2026-10-19 11:28:00
+							1528 button 근거 보기 ↗
+					1529 row
+						1530 cell
+							1531 text 연결 관계 불일치
+							1532 text 현장 메모 확인
+						1533 cell
+							1534 text NOTE-0036
+						1535 cell
+							1536 text 연결 관계 확인 필요
+							1537 text 후속 요청 여부 확인 필요
+						1538 cell
+							1539 text 2026-10-19 09:06:00
+							1540 button 근거 보기 ↗
+					1541 row
+						1542 cell
+							1543 text 기타 확인 필요
+							1544 text 현장 메모 확인
+						1545 cell
+							1546 text NOTE-0056
+						1547 cell
+							1548 text 후속 요청 여부 확인 필요
+						1549 cell
+							1550 text 2026-10-25 23:55:00
+							1551 button 근거 보기 ↗
+					1552 row
+						1553 cell
+							1554 text 기타 확인 필요
+							1555 text 알람 상태 확인
+						1556 cell
+							1557 text AL-ORPHAN-1
+						1558 cell
+							1559 text 대응되는 발생 기록 없이 해제만 확인됐습니다.
+						1560 cell
+							1561 text 2026-10-25 14:32:00
+							1562 button 근거 보기 ↗
+					1563 row
+						1564 cell
+							1565 text 기타 확인 필요
+							1566 text 알람 상태 확인
+						1567 cell
+							1568 text AL-ORPHAN-6
+						1569 cell
+							1570 text 대응되는 발생 기록 없이 해제만 확인됐습니다.
+						1571 cell
+							1572 text 2026-10-25 00:16:00
+							1573 button 근거 보기 ↗
+					1574 row
+						1575 cell
+							1576 text 기타 확인 필요
+							1577 text 알람 상태 확인
+						1578 cell
+							1579 text AL-ORPHAN-5
+						1580 cell
+							1581 text 대응되는 발생 기록 없이 해제만 확인됐습니다.
+						1582 cell
+							1583 text 2026-10-23 19:50:00
+							1584 button 근거 보기 ↗
+					1585 row
+						1586 cell
+							1587 text 기타 확인 필요
+							1588 text 현장 메모 확인
+						1589 cell
+							1590 text NOTE-0082
+						1591 cell
+							1592 text 후속 요청 여부 확인 필요
+						1593 cell
+							1594 text 2026-10-22 22:21:00
+							1595 button 근거 보기 ↗
+					1596 row
+						1597 cell
+							1598 text 기타 확인 필요
+							1599 text 알람 상태 확인
+						1600 cell
+							1601 text AL-ORPHAN-4
+						1602 cell
+							1603 text 대응되는 발생 기록 없이 해제만 확인됐습니다.
+						1604 cell
+							1605 text 2026-10-22 19:36:00
+							1606 button 근거 보기 ↗
+					1607 row
+						1608 cell
+							1609 text 기타 확인 필요
+							1610 text 현장 메모 확인
+						1611 cell
+							1612 text NOTE-0042
+						1613 cell
+							1614 text 후속 요청 여부 확인 필요
+						1615 cell
+							1616 text 2026-10-21 21:33:00
+							1617 button 근거 보기 ↗
+					1618 row
+						1619 cell
+							1620 text 기타 확인 필요
+							1621 text 알람 상태 확인
+						1622 cell
+							1623 text AL-ORPHAN-2
+						1624 cell
+							1625 text 대응되는 발생 기록 없이 해제만 확인됐습니다.
+						1626 cell
+							1627 text 2026-10-21 18:09:00
+							1628 button 근거 보기 ↗
+					1629 row
+						1630 cell
+							1631 text 기타 확인 필요
+							1632 text 현장 메모 확인
+						1633 cell
+							1634 text NOTE-0045
+						1635 cell
+							1636 text 후속 요청 여부 확인 필요
+						1637 cell
+							1638 text 2026-10-21 17:41:00
+							1639 button 근거 보기 ↗
+					1640 row
+						1641 cell
+							1642 text 기타 확인 필요
+							1643 text 현장 메모 확인
+						1644 cell
+							1645 text NOTE-0089
+						1646 cell
+							1647 text 후속 요청 여부 확인 필요
+						1648 cell
+							1649 text 2026-10-21 10:12:00
+							1650 button 근거 보기 ↗
+					1651 row
+						1652 cell
+							1653 text 기타 확인 필요
+							1654 text 알람 상태 확인
+						1655 cell
+							1656 text AL-ORPHAN-0
+						1657 cell
+							1658 text 대응되는 발생 기록 없이 해제만 확인됐습니다.
+						1659 cell
+							1660 text 2026-10-20 17:40:00
+							1661 button 근거 보기 ↗
+					1662 row
+						1663 cell
+							1664 text 기타 확인 필요
+							1665 text 알람 상태 확인
+						1666 cell
+							1667 text AL-ORPHAN-3
+						1668 cell
+							1669 text 대응되는 발생 기록 없이 해제만 확인됐습니다.
+						1670 cell
+							1671 text 2026-10-20 08:20:00
+							1672 button 근거 보기 ↗
+		114 text ShiftBridge 업무 판단 지원 · 원본 수정 없음
+
+The focused UI element is 0 AXWebArea ShiftBridge · 교대 인수인계, URL: 127.0.0.1:4173/

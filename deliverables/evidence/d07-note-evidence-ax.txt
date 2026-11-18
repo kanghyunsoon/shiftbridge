@@ -1,0 +1,47 @@
+Browser tab: 1, Title: "ShiftBridge · 교대 인수인계", URL: "http://127.0.0.1:4173/".
+0 AXWebArea ShiftBridge · 교대 인수인계, URL: 127.0.0.1:4173/
+	1 container detail-dialog
+		2 container
+			3 text 판단 근거 / SOURCE RECORDS
+			4 button 근거 닫기
+		5 container detail-content
+			6 text 2026-10-26 20:00:00 KST · 당시 가용 근거
+			7 heading NOTE-0025, Value: 2
+				8 text NOTE-0025
+			9 text 지속 관찰
+			10 heading 상태 변화가 반복되어 추적 필요, Value: 3
+				11 text 상태 변화가 반복되어 추적 필요
+			12 text 다음 조 확인 사항: 상태 변화와 재발 여부
+			13 text 분류 근거: 생산운영팀 승인 문구
+			14 text 조치 완료 여부: 미확정
+			15 text 메모 설비 EQ-10 · 연결 LOT 없음
+			16 text 설비 관련 메모
+			17 heading 판단에 사용한 원본 기록 1, Value: 3
+				18 text 판단에 사용한 원본 기록  1
+			19 container
+				20 button (expanded) NOTE-0025 operator_notes.csv:26, Secondary Actions: Collapse
+					21 AXListMarker ▾ 
+					22 text NOTE-0025
+					23 text operator_notes.csv:26
+				24 definition list
+					25 container note_id
+						26 text note_id
+					27 text NOTE-0025
+					28 container created_at
+						29 text created_at
+					30 text 2026-10-25 21:39:00
+					31 container equipment_id
+						32 text equipment_id
+					33 text EQ-10
+					34 container lot_id
+						35 text lot_id
+					36 text 공란 (0으로 대체하지 않음)
+					37 container author
+						38 text author
+					39 text op_kim
+					40 container note
+						41 text note
+					42 text 상태 변화가 반복되어 추적 필요
+			43 text 제공 이력 이전 상태는 확인 불가 · 제공 기록 기준
+
+The focused UI element is 4 button 근거 닫기

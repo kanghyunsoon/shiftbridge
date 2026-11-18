@@ -1,0 +1,86 @@
+
+> shiftbridge@0.1.0 check
+> npm run check:static && npm test
+
+
+> shiftbridge@0.1.0 check:static
+> node scripts/static-check.mjs
+
+Static check: 19 files, 0 errors, 0 warnings
+
+> shiftbridge@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ App failure: invalid cutoff clears old results, closes summaries, and disables stale export (137.3521ms)
+✔ App failure: rejected clipboard write selects visible original and shows manual-copy fallback (126.1377ms)
+✔ App race: delayed clipboard success cannot claim the newly switched summary was copied (98.0077ms)
+✔ CSV: BOM·CRLF·quoted comma·escaped quote (1.6966ms)
+✔ CSV: multiline field retains physical starting lines (0.2187ms)
+✔ CSV: unclosed quote keeps earlier readable rows and reports remainder (0.1938ms)
+✔ CSV: malformed closing quote is excluded instead of silently repaired (0.1241ms)
+✔ CSV: missing columns isolates one file without dropping other files (0.5479ms)
+✔ CSV: wrong width excludes one row with its original line (0.3963ms)
+✔ CSV: duplicate headers cannot create an ambiguous record (0.1876ms)
+✔ CSV: reserved provenance header cannot overwrite the original source positions (0.1612ms)
+✔ AC-001: source values and duplicate locations survive without mutating input (1.3574ms)
+✔ AC-002: most recent shift is KST and changes exactly at boundary (2.6218ms)
+✔ AC-003: late clear is not used in historical evidence or summary (11.0021ms)
+✔ AC-004/005: only available revisions and first snapshots are visible (0.8984ms)
+✔ AC-006: old unresolved alarms/progress/hold survive 24h period (0.3959ms)
+✔ AC-007: event and snapshot row order cannot change business states (1.2534ms)
+✔ AC-008: real CSV complete duplicates do not add events or LOT snapshots (60.6081ms)
+✔ AC-009: conflicting event ID poisons involved instance instead of choosing clear (0.5781ms)
+✔ AC-010: recurrence counts instances, not retransmissions, without severity promotion (0.7961ms)
+✔ AC-011: heartbeat does not create unknown alarms and valid clear resolves (0.5987ms)
+✔ AC-012: orphan, equal timestamps, missing instance, inverted chronology are uncertain (0.8561ms)
+✔ AC-013: severity precedes duration and durations order same severity (0.3662ms)
+✔ AC-014: related LOT remains relationship evidence, not damage (0.431ms)
+✔ AC-015: conflicting top revision and highest error cannot fall back (0.4329ms)
+✔ AC-016: progress, COMPLETE hold, COMPLETE zero, CANCELLED null differ (0.4875ms)
+✔ AC-017: obvious good>input is quality issue but arbitrary sum inequality is not (0.2235ms)
+✔ AC-018: mismatched equipment preserves both records but cannot introduce LOT (0.4413ms)
+✔ AC-019: recent approved request and observation each introduce completed zero-hold LOT (0.3488ms)
+✔ AC-020: old note remains accessible for active LOT but cannot reactivate complete LOT (1.153ms)
+✔ AC-021/022: all 90 real notes have approved classifications; completion is never inferred (0.2287ms)
+✔ AC-023: quality does not hide independent progress handover (0.2264ms)
+✔ AC-024: lower 24h boundary excluded, next second and cutoff included (0.2387ms)
+✔ AC-025: empty data retains history limitations and no plant-wide guarantee (0.1208ms)
+✔ AC-026: missing file/invalid availability produces partial result rather than normal zero guarantee (2.4576ms)
+✔ AC-027: summary retains cutoff, evidence, partial state and independent D06 facts (0.2551ms)
+✔ AC-028: future conflict cannot poison past snapshot or event (0.2618ms)
+✔ AC-031/032: known ambiguous and explicit approved example are not keyword-equivalent (0.0689ms)
+✔ AC-033: suspected missing input is a task, not proven loss (0.054ms)
+✔ AC-034: reference note cannot introduce completed zero-hold LOT (0.1286ms)
+✔ AC-035: D06 CANCELLED hold-null is definite memo handover with independent unknown hold (0.1865ms)
+✔ AC-036: invalid available revision prevents silently reverting to older valid one (0.1824ms)
+✔ AC-037: missing alarm catalog cannot synthesize HIGH or LOW (0.1677ms)
+✔ AC-038: hold-zero later removes hold unknown but not valid memo handover (0.2257ms)
+✔ AC-039: detail and summary preserve distinct D06 states and one unique LOT (0.3058ms)
+✔ DOM strings from CSV are escaped in list and raw evidence (0.5349ms)
+✔ Real CSV: both historical shifts match independently specified baseline counts (174.3647ms)
+✔ AC-040/044: compact is default, max 5 per section; full retains omitted IDs and file locations (88.1027ms)
+✔ AC-041/042: hold then progress then memo LOT then field work; oldest latest-availability wins; no duplicate LOT or memo work (0.486ms)
+✔ AC-043: quality taxonomy precedes newest availability and revision conflict is one confirmation item (0.583ms)
+✔ AC-045/047: compact/full share cutoff, show partial coverage, and never fill another section above five (0.2722ms)
+✔ Extra underscore CSV fields remain distinct source content and are safely displayed (0.2379ms)
+✔ Large revision history avoids variadic call limits while keeping the highest available version (580.2405ms)
+✔ Input race: delayed default batch cannot overwrite newer selected CSV (2.872ms)
+✔ Input race: two selections commit only the newest complete batch; other files preserved (0.5116ms)
+✔ Unreadable CSV is null coverage without dropping the other four readable files (0.4724ms)
+✔ Unexpected commit failure reports error and always releases the active loading state (0.4328ms)
+✔ Static server paths: allow only index, browser assets, and the five named CSV inputs (1.9773ms)
+✔ Static server paths: encoded traversal, backslashes, invalid encoding, and sibling roots fail closed (0.4731ms)
+✔ Actual local HTTP server serves allowed files and rejects malformed paths and writes (244.7206ms)
+✔ Static guard: domain boundary catches wrong imports and accepts domain helpers (82.9211ms)
+✔ Static guard: implicit clocks rejected; explicit timestamps accepted (4.2624ms)
+✔ Static guard: HTML sinks verify imported renderer, not a similarly named function (6.6799ms)
+✔ Static guard: large variadic extrema rejected; bounded iteration accepted (2.7489ms)
+✔ Static guard: asynchronous events need explicit rejection boundaries (2.9655ms)
+ℹ tests 65
+ℹ suites 0
+ℹ pass 65
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1107.07

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShiftBridge · 교대 인수인계</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <aside class="rail"><a class="brand" href="/" aria-label="ShiftBridge 홈"><span class="brand-mark">S<span>↗</span></span><span>SHIFT<br><b>BRIDGE</b></span></a><div class="rail-nav"><span class="active">◫ <span>교대 인수인계</span></span><span>↳ <span>제공 기록 기준</span></span></div><div class="rail-foot"><i></i> LOCAL WORKSPACE<br><small>데이터는 이 브라우저에서 처리됩니다.</small></div></aside>
+  <main>
+    <header class="topbar"><span>생산운영 <span class="slash">/</span> 교대 인수인계</span><span class="workspace-badge">READ-ONLY · 로컬 CSV</span></header>
+    <section class="page-title"><div><div class="eyebrow">SHIFT HANDOVER</div><h1>다음 교대의 시작을 명확하게.</h1><p>확인할 업무와 기록의 불확실성을 나누고, 판단의 근거까지 확인하세요.</p></div><button id="open-summary" class="primary" disabled>인수인계 요약 <span>↗</span></button></section>
+    <section class="controls" aria-label="조회 조건"><div class="control-group"><label for="shift-date">교대 기준일</label><input id="shift-date" type="date" required></div><div class="control-group"><label for="shift-hour">교대 시각 · KST</label><select id="shift-hour"><option value="08">08:00 · 주간 시작</option><option value="20">20:00 · 야간 시작</option></select></div><button class="dark" id="apply-shift">조회하기</button><button class="quiet" id="latest-shift">최근 교대</button><div class="control-spacer"></div><label class="file-button" for="csv-files">↥ CSV 선택<input type="file" id="csv-files" accept=".csv" multiple></label><button class="quiet" id="reload-default">기본 자료</button></section>
+    <p class="input-hint" id="input-hint">기본 input_data의 CSV 5개를 읽습니다. CSV 선택은 파일별로 대체하며 서버에 업로드하지 않습니다.</p>
+    <div id="status" role="status" aria-live="polite">제공 기록을 읽고 있습니다…</div>
+    <div id="result"></div>
+    <footer>ShiftBridge <span>업무 판단 지원 · 원본 수정 없음</span></footer>
+  </main>
+  <dialog id="detail-dialog"><div class="dialog-bar"><span>판단 근거 / SOURCE RECORDS</span><button class="icon-button" data-close="detail-dialog" aria-label="근거 닫기">✕</button></div><div id="detail-content"></div></dialog>
+  <dialog id="summary-dialog"><div class="dialog-bar"><span>교대 인수인계 요약</span><button class="icon-button" data-close="summary-dialog" aria-label="요약 닫기">✕</button></div><div class="summary-body"><div class="summary-modes" role="group" aria-label="요약 형식"><button id="compact-summary" class="quiet" aria-pressed="true">간결 요약 · 최대15건</button><button id="full-summary" class="quiet" aria-pressed="false">전체 상세 · 모든 항목</button></div><p id="summary-hint">선택 교대 전체 기준입니다. 검색·설비 필터와 무관하며, 영역별 상위5건과 잔여 건수를 표시합니다.</p><textarea id="summary-text" aria-label="인수인계 요약 원문" readonly></textarea><div class="summary-actions"><span id="copy-status" role="status"></span><button id="copy-summary" class="primary">간결 요약 복사</button></div><p><button class="source-link" data-close="summary-dialog">목록에서 원본 확인 ↗</button></p></div></dialog>
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>

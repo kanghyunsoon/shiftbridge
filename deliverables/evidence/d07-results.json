@@ -1,0 +1,460 @@
+{
+  "hashes": {
+    "equipment.csv": "d60123a3766c55f6d239e614ad9eb5c83fc7637f576604702600814820ae767f",
+    "alarm_catalog.csv": "88ea6867dfdef21dc3ebfb1b9d9f945e0eb39a2739e5161277a0731c8fd450f6",
+    "alarm_events.csv": "2394304d6864a2f6acce9b01f77139fe2e6c0ef758e1b234acf22c76441a645f",
+    "lot_snapshots.csv": "70ef6974fa900c8c7f7f744572d788190936a032561b4610b6345a0d011b828e",
+    "operator_notes.csv": "6faafd7301c3c1b1480457647c224332b40e14b2b3cda167ca2a6948a020189e"
+  },
+  "snapshots": [
+    {
+      "cutoff": "2026-10-25 20:00:00",
+      "stats": {
+        "open": 43,
+        "high": 13,
+        "uncertain": 7,
+        "resolved": 504,
+        "availableLots": 402,
+        "progress": 53,
+        "held": 174,
+        "handoverLots": 227,
+        "handoverWork": 236,
+        "recentNotes": 11
+      },
+      "quality": 125,
+      "compact": {
+        "characters": 2219,
+        "bytes": 3980,
+        "itemCount": 15
+      },
+      "fullCharacters": 91290,
+      "alarmTop5": [
+        {
+          "id": "AL-00086",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 09:07:00"
+        },
+        {
+          "id": "AL-00537",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 09:12:00"
+        },
+        {
+          "id": "AL-00258",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 22:11:00"
+        },
+        {
+          "id": "AL-00186",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-21 18:31:00"
+        },
+        {
+          "id": "AL-00363",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-22 07:09:00"
+        }
+      ],
+      "workTop5": [
+        {
+          "id": "LOT-0227",
+          "priority": 1,
+          "availableAt": "2026-10-18 22:43:00",
+          "reasons": [
+            "보류 수량 1개"
+          ],
+          "highAlarmIds": [
+            "AL-00258",
+            "AL-00290"
+          ]
+        },
+        {
+          "id": "LOT-0257",
+          "priority": 1,
+          "availableAt": "2026-10-18 22:50:00",
+          "reasons": [
+            "보류 수량 12개"
+          ],
+          "highAlarmIds": [
+            "AL-00258",
+            "AL-00290"
+          ]
+        },
+        {
+          "id": "LOT-0091",
+          "priority": 1,
+          "availableAt": "2026-10-19 00:36:00",
+          "reasons": [
+            "보류 수량 9개"
+          ],
+          "highAlarmIds": []
+        },
+        {
+          "id": "LOT-0012",
+          "priority": 1,
+          "availableAt": "2026-10-19 01:30:00",
+          "reasons": [
+            "보류 수량 5개"
+          ],
+          "highAlarmIds": [
+            "AL-00148"
+          ]
+        },
+        {
+          "id": "LOT-0062",
+          "priority": 1,
+          "availableAt": "2026-10-19 01:33:00",
+          "reasons": [
+            "보류 수량 11개"
+          ],
+          "highAlarmIds": []
+        }
+      ],
+      "qualityTop5": [
+        {
+          "id": "LOT-XBAD",
+          "priority": 2,
+          "availableAt": "2026-10-23 12:20:00",
+          "reasons": [
+            "양품 수량이 투입 수량보다 큽니다. 원본 수량을 확인해주세요."
+          ]
+        },
+        {
+          "id": "LOT-0331",
+          "priority": 3,
+          "availableAt": "2026-10-25 19:28:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0032",
+          "priority": 3,
+          "availableAt": "2026-10-25 13:45:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0095",
+          "priority": 3,
+          "availableAt": "2026-10-25 13:08:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0234",
+          "priority": 3,
+          "availableAt": "2026-10-25 13:00:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        }
+      ]
+    },
+    {
+      "cutoff": "2026-10-26 08:00:00",
+      "stats": {
+        "open": 42,
+        "high": 18,
+        "uncertain": 7,
+        "resolved": 548,
+        "availableLots": 431,
+        "progress": 58,
+        "held": 181,
+        "handoverLots": 239,
+        "handoverWork": 246,
+        "recentNotes": 9
+      },
+      "quality": 134,
+      "compact": {
+        "characters": 2300,
+        "bytes": 4113,
+        "itemCount": 15
+      },
+      "fullCharacters": 96036,
+      "alarmTop5": [
+        {
+          "id": "AL-00086",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 09:07:00"
+        },
+        {
+          "id": "AL-00537",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 09:12:00"
+        },
+        {
+          "id": "AL-00258",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 22:11:00"
+        },
+        {
+          "id": "AL-00186",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-21 18:31:00"
+        },
+        {
+          "id": "AL-00363",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-22 07:09:00"
+        }
+      ],
+      "workTop5": [
+        {
+          "id": "LOT-0227",
+          "priority": 1,
+          "availableAt": "2026-10-18 22:43:00",
+          "reasons": [
+            "보류 수량 1개"
+          ],
+          "highAlarmIds": [
+            "AL-00258",
+            "AL-00290",
+            "AL-00276"
+          ]
+        },
+        {
+          "id": "LOT-0257",
+          "priority": 1,
+          "availableAt": "2026-10-18 22:50:00",
+          "reasons": [
+            "보류 수량 12개"
+          ],
+          "highAlarmIds": [
+            "AL-00258",
+            "AL-00290",
+            "AL-00276"
+          ]
+        },
+        {
+          "id": "LOT-0091",
+          "priority": 1,
+          "availableAt": "2026-10-19 00:36:00",
+          "reasons": [
+            "보류 수량 9개"
+          ],
+          "highAlarmIds": []
+        },
+        {
+          "id": "LOT-0012",
+          "priority": 1,
+          "availableAt": "2026-10-19 01:30:00",
+          "reasons": [
+            "보류 수량 5개"
+          ],
+          "highAlarmIds": [
+            "AL-00148",
+            "AL-00162",
+            "AL-00157"
+          ]
+        },
+        {
+          "id": "LOT-0062",
+          "priority": 1,
+          "availableAt": "2026-10-19 01:33:00",
+          "reasons": [
+            "보류 수량 11개"
+          ],
+          "highAlarmIds": []
+        }
+      ],
+      "qualityTop5": [
+        {
+          "id": "LOT-XBAD",
+          "priority": 2,
+          "availableAt": "2026-10-23 12:20:00",
+          "reasons": [
+            "양품 수량이 투입 수량보다 큽니다. 원본 수량을 확인해주세요."
+          ]
+        },
+        {
+          "id": "LOT-0232",
+          "priority": 3,
+          "availableAt": "2026-10-26 05:49:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0224",
+          "priority": 3,
+          "availableAt": "2026-10-26 04:51:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0064",
+          "priority": 3,
+          "availableAt": "2026-10-26 03:55:00",
+          "reasons": [
+            "보류 수량 미확인",
+            "취소 관련 후속 업무 근거 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0271",
+          "priority": 3,
+          "availableAt": "2026-10-26 02:55:00",
+          "reasons": [
+            "보류 수량 미확인",
+            "취소 관련 후속 업무 근거 미확인"
+          ]
+        }
+      ]
+    },
+    {
+      "cutoff": "2026-10-26 20:00:00",
+      "stats": {
+        "open": 42,
+        "high": 18,
+        "uncertain": 7,
+        "resolved": 548,
+        "availableLots": 432,
+        "progress": 59,
+        "held": 181,
+        "handoverLots": 240,
+        "handoverWork": 243,
+        "recentNotes": 4
+      },
+      "quality": 135,
+      "compact": {
+        "characters": 2281,
+        "bytes": 4068,
+        "itemCount": 15
+      },
+      "fullCharacters": 94992,
+      "alarmTop5": [
+        {
+          "id": "AL-00086",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 09:07:00"
+        },
+        {
+          "id": "AL-00537",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 09:12:00"
+        },
+        {
+          "id": "AL-00258",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-20 22:11:00"
+        },
+        {
+          "id": "AL-00186",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-21 18:31:00"
+        },
+        {
+          "id": "AL-00363",
+          "severity": "HIGH",
+          "occurredAt": "2026-10-22 07:09:00"
+        }
+      ],
+      "workTop5": [
+        {
+          "id": "LOT-0227",
+          "priority": 1,
+          "availableAt": "2026-10-18 22:43:00",
+          "reasons": [
+            "보류 수량 1개"
+          ],
+          "highAlarmIds": [
+            "AL-00258",
+            "AL-00290",
+            "AL-00276"
+          ]
+        },
+        {
+          "id": "LOT-0257",
+          "priority": 1,
+          "availableAt": "2026-10-18 22:50:00",
+          "reasons": [
+            "보류 수량 12개"
+          ],
+          "highAlarmIds": [
+            "AL-00258",
+            "AL-00290",
+            "AL-00276"
+          ]
+        },
+        {
+          "id": "LOT-0091",
+          "priority": 1,
+          "availableAt": "2026-10-19 00:36:00",
+          "reasons": [
+            "보류 수량 9개"
+          ],
+          "highAlarmIds": []
+        },
+        {
+          "id": "LOT-0012",
+          "priority": 1,
+          "availableAt": "2026-10-19 01:30:00",
+          "reasons": [
+            "보류 수량 5개"
+          ],
+          "highAlarmIds": [
+            "AL-00148",
+            "AL-00162",
+            "AL-00157"
+          ]
+        },
+        {
+          "id": "LOT-0062",
+          "priority": 1,
+          "availableAt": "2026-10-19 01:33:00",
+          "reasons": [
+            "보류 수량 11개"
+          ],
+          "highAlarmIds": []
+        }
+      ],
+      "qualityTop5": [
+        {
+          "id": "LOT-XBAD",
+          "priority": 2,
+          "availableAt": "2026-10-23 12:20:00",
+          "reasons": [
+            "양품 수량이 투입 수량보다 큽니다. 원본 수량을 확인해주세요."
+          ]
+        },
+        {
+          "id": "LOT-0263",
+          "priority": 3,
+          "availableAt": "2026-10-26 09:09:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0232",
+          "priority": 3,
+          "availableAt": "2026-10-26 05:49:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0224",
+          "priority": 3,
+          "availableAt": "2026-10-26 04:51:00",
+          "reasons": [
+            "보류 수량 미확인"
+          ]
+        },
+        {
+          "id": "LOT-0064",
+          "priority": 3,
+          "availableAt": "2026-10-26 03:55:00",
+          "reasons": [
+            "보류 수량 미확인",
+            "취소 관련 후속 업무 근거 미확인"
+          ]
+        }
+      ]
+    }
+  ]
+}

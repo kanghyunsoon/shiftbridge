@@ -1,0 +1,62 @@
+{
+  "generatedAtUTC": "2026-10-26T23:39:38.057Z",
+  "scope": "src/scripts/tests/eslint config + index.html ID references",
+  "filesChecked": 13,
+  "errors": 6,
+  "warnings": 0,
+  "findings": [
+    {
+      "file": "src/app.js",
+      "line": 37,
+      "column": 47,
+      "severity": "error",
+      "rule": "shiftbridge/event-error-boundary",
+      "message": "브라우저 이벤트는 Promise를 기다리지 않습니다. 동기 리스너에서 비동기 작업을 호출하고 catch로 실패를 처리하세요."
+    },
+    {
+      "file": "src/app.js",
+      "line": 38,
+      "column": 43,
+      "severity": "error",
+      "rule": "shiftbridge/event-error-boundary",
+      "message": "브라우저 이벤트는 Promise를 기다리지 않습니다. 동기 리스너에서 비동기 작업을 호출하고 catch로 실패를 처리하세요."
+    },
+    {
+      "file": "src/app.js",
+      "line": 79,
+      "column": 45,
+      "severity": "error",
+      "rule": "shiftbridge/event-error-boundary",
+      "message": "브라우저 이벤트는 Promise를 기다리지 않습니다. 동기 리스너에서 비동기 작업을 호출하고 catch로 실패를 처리하세요."
+    },
+    {
+      "file": "src/domain/handover.js",
+      "line": 135,
+      "column": 17,
+      "severity": "error",
+      "rule": "shiftbridge/bounded-call-arguments",
+      "message": "큰 CSV 배열을 Math.max/min 인자로 펼치면 호출 스택 제한에 걸릴 수 있습니다. reduce/반복문을 사용하세요."
+    },
+    {
+      "file": "src/view/render.js",
+      "line": 24,
+      "column": 7,
+      "severity": "error",
+      "rule": "no-useless-assignment",
+      "message": "The value assigned to 'content' is not used in subsequent statements."
+    },
+    {
+      "file": "src/view/render.js",
+      "line": 61,
+      "column": 7,
+      "severity": "error",
+      "rule": "no-useless-assignment",
+      "message": "The value assigned to 'info' is not used in subsequent statements."
+    }
+  ],
+  "limits": [
+    "AST 정적 규칙이며 런타임 예외나 업무 판정의 정확성을 완전히 증명하지 않습니다.",
+    "HTML 검사는 ID 연결과 허용된 renderer 대입을 확인하며 템플릿 전체의 데이터 흐름을 증명하지 않습니다.",
+    "실제 CSV 시점/수치/요약 정확성은 npm test 및 별도 QA로 검증합니다."
+  ]
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "cutoff": "2026-10-25 20:00:00",
+    "independent_hold_top5": [
+      {
+        "lot_id": "LOT-0227",
+        "revision": "1",
+        "updated_at": "2026-10-18 22:43:00",
+        "hold_qty": "1",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0257",
+        "revision": "2",
+        "updated_at": "2026-10-18 22:50:00",
+        "hold_qty": "12",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0091",
+        "revision": "2",
+        "updated_at": "2026-10-19 00:36:00",
+        "hold_qty": "9",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0012",
+        "revision": "1",
+        "updated_at": "2026-10-19 01:30:00",
+        "hold_qty": "5",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0062",
+        "revision": "1",
+        "updated_at": "2026-10-19 01:33:00",
+        "hold_qty": "11",
+        "status": "COMPLETE"
+      }
+    ],
+    "hold_top5_matches_app": true,
+    "missing_hold_newest_first_matches_app": true
+  },
+  {
+    "cutoff": "2026-10-26 08:00:00",
+    "independent_hold_top5": [
+      {
+        "lot_id": "LOT-0227",
+        "revision": "1",
+        "updated_at": "2026-10-18 22:43:00",
+        "hold_qty": "1",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0257",
+        "revision": "2",
+        "updated_at": "2026-10-18 22:50:00",
+        "hold_qty": "12",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0091",
+        "revision": "2",
+        "updated_at": "2026-10-19 00:36:00",
+        "hold_qty": "9",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0012",
+        "revision": "1",
+        "updated_at": "2026-10-19 01:30:00",
+        "hold_qty": "5",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0062",
+        "revision": "1",
+        "updated_at": "2026-10-19 01:33:00",
+        "hold_qty": "11",
+        "status": "COMPLETE"
+      }
+    ],
+    "hold_top5_matches_app": true,
+    "missing_hold_newest_first_matches_app": true
+  },
+  {
+    "cutoff": "2026-10-26 20:00:00",
+    "independent_hold_top5": [
+      {
+        "lot_id": "LOT-0227",
+        "revision": "1",
+        "updated_at": "2026-10-18 22:43:00",
+        "hold_qty": "1",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0257",
+        "revision": "2",
+        "updated_at": "2026-10-18 22:50:00",
+        "hold_qty": "12",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0091",
+        "revision": "2",
+        "updated_at": "2026-10-19 00:36:00",
+        "hold_qty": "9",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0012",
+        "revision": "1",
+        "updated_at": "2026-10-19 01:30:00",
+        "hold_qty": "5",
+        "status": "COMPLETE"
+      },
+      {
+        "lot_id": "LOT-0062",
+        "revision": "1",
+        "updated_at": "2026-10-19 01:33:00",
+        "hold_qty": "11",
+        "status": "COMPLETE"
+      }
+    ],
+    "hold_top5_matches_app": true,
+    "missing_hold_newest_first_matches_app": true
+  }
+]

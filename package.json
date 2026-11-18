@@ -1,0 +1,21 @@
+{
+  "name": "shiftbridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "로컬 CSV 기반 교대 인수인계 지원 도구",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:static": "node scripts/static-check.mjs",
+    "check": "npm run check:static && npm test"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.13.0",
+    "globals": "17.13.0"
+  }
+}

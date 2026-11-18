@@ -1,0 +1,60 @@
+Browser tab: 1, Title: "ShiftBridge · 교대 인수인계", URL: "http://127.0.0.1:4173/".
+0 AXWebArea ShiftBridge · 교대 인수인계, URL: 127.0.0.1:4173/
+	1 container detail-dialog
+		2 container
+			3 text 판단 근거 / SOURCE RECORDS
+			4 button 근거 닫기
+		5 container detail-content
+			6 text 2026-10-26 20:00:00 KST · 당시 가용 근거
+			7 heading LOT-XBAD, Value: 2
+				8 text LOT-XBAD
+			9 text LOT 데이터 확인
+			10 heading 확인 사유, Value: 3
+				11 text 확인 사유
+			12 text 양품 수량이 투입 수량보다 큽니다. 원본 수량을 확인해주세요.
+			13 text 확인할 내용: 아래 원본의 식별자·시각·수량·연결 관계를 대조해주세요. 데이터 확인은 긴급 생산 문제 판정이 아닙니다.
+			14 button 동일 LOT의 인계 여부와 독립 상태 확인 ↗
+			15 heading 판단에 사용한 원본 기록 1, Value: 3
+				16 text 판단에 사용한 원본 기록  1
+			17 container
+				18 button (expanded) LOT-XBAD / revision 1 lot_snapshots.csv:218, Secondary Actions: Collapse
+					19 AXListMarker ▾ 
+					20 text LOT-XBAD / revision 1
+					21 text lot_snapshots.csv:218
+				22 definition list
+					23 container lot_id
+						24 text lot_id
+					25 text LOT-XBAD
+					26 container revision
+						27 text revision
+					28 text 1
+					29 container equipment_id
+						30 text equipment_id
+					31 text EQ-07
+					32 container started_at
+						33 text started_at
+					34 text 2026-10-23 11:00:00
+					35 container ended_at
+						36 text ended_at
+					37 text 2026-10-23 12:00:00
+					38 container status
+						39 text status
+					40 text COMPLETE
+					41 container input_qty
+						42 text input_qty
+					43 text 100
+					44 container good_qty
+						45 text good_qty
+					46 text 115
+					47 container reject_qty
+						48 text reject_qty
+					49 text 4
+					50 container hold_qty
+						51 text hold_qty
+					52 text 0
+					53 container updated_at
+						54 text updated_at
+					55 text 2026-10-23 12:20:00
+			56 text 제공 이력 이전 상태는 확인 불가 · 제공 기록 기준
+
+The focused UI element is 4 button 근거 닫기
